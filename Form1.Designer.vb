@@ -472,9 +472,11 @@ Partial Class Form1
         '
         'PictureBox7
         '
+        Me.PictureBox7.Image = Global.Proyecto_Ingiieneria_Software.My.Resources.Resources.Sale_Free_Download_PNG
         Me.PictureBox7.Location = New System.Drawing.Point(92, 263)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(91, 82)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 51
         Me.PictureBox7.TabStop = False
         '
