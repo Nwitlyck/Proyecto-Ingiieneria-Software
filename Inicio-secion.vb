@@ -25,6 +25,8 @@ Public Class Inicio_secion
                 Else
 
                     MessageBox.Show("Inicio de sesion correcto")
+                    FormBuscar.Show()
+                    Me.Hide()
                 End If
             End If
         End If
