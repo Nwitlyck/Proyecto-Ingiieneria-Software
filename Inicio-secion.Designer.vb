@@ -43,6 +43,7 @@ Partial Class Inicio_secion
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(133, 20)
         Me.TextBox2.TabIndex = 1
+        Me.TextBox2.UseSystemPasswordChar = True
         '
         'Label1
         '

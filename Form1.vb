@@ -2,7 +2,7 @@
 
 Public Class FormBuscar
 
-    Dim Connect As New SqlConnection(“Data Source = DESKTOP-15I0T6V\MSSQLSERVER1; Initial Catalog = ProyectoDatos; Integrated Security = True”)
+    Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         FilterData("")
@@ -11,7 +11,7 @@ Public Class FormBuscar
 
     Public Sub FilterData(valueToSearch As String)
 
-        Dim searchQuery As String = "SELECT * From BuscadorPro WHERE CONCAT(NombrePro,CodigoPro,Precio,Supermercado) like '%" & valueToSearch & "%'"
+        Dim searchQuery As String = "SELECT * From BuscadorPro WHERE CONCAT(NombrePro,CodigoPro,Precio,Supermercado,Marca) like '%" & valueToSearch & "%' ORDER BY Precio"
 
         Dim command As New SqlCommand(searchQuery, Connect)
         Dim adapter As New SqlDataAdapter(command)
@@ -38,6 +38,6 @@ Public Class FormBuscar
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         perfil.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

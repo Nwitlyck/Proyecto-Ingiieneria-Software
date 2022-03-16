@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class Inicio_secion
 
-    Dim Connect As New SqlConnection(“Data Source = DESKTOP-15I0T6V\MSSQLSERVER1; Initial Catalog = ProyectoDatos; Integrated Security = True”)
+    Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Public Sub IniSesion()
         If TextBox1.Text = "" Then
             MessageBox.Show("Ingrese un usuario")
@@ -26,7 +26,7 @@ Public Class Inicio_secion
 
                     MessageBox.Show("Inicio de sesion correcto")
                     FormBuscar.Show()
-                    Me.Hide()
+                    Me.Close()
                 End If
             End If
         End If

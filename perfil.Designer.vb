@@ -31,7 +31,9 @@ Partial Class perfil
         Me.TextBoxPrecio = New System.Windows.Forms.TextBox()
         Me.TextBoxProducto = New System.Windows.Forms.TextBox()
         Me.ButtonAgregar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonVolver = New System.Windows.Forms.Button()
+        Me.TextBoxMarca = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,11 +48,11 @@ Partial Class perfil
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(244, 101)
+        Me.Label2.Location = New System.Drawing.Point(215, 98)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.Size = New System.Drawing.Size(79, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Producto"
+        Me.Label2.Text = "Id del Producto"
         '
         'Label3
         '
@@ -107,21 +109,39 @@ Partial Class perfil
         Me.ButtonAgregar.Text = "Agregar"
         Me.ButtonAgregar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'ButtonVolver
         '
-        Me.Button1.Location = New System.Drawing.Point(52, 390)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonVolver.Location = New System.Drawing.Point(52, 390)
+        Me.ButtonVolver.Name = "ButtonVolver"
+        Me.ButtonVolver.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonVolver.TabIndex = 10
+        Me.ButtonVolver.Text = "Volver"
+        Me.ButtonVolver.UseVisualStyleBackColor = True
+        '
+        'TextBoxMarca
+        '
+        Me.TextBoxMarca.Location = New System.Drawing.Point(300, 223)
+        Me.TextBoxMarca.Name = "TextBoxMarca"
+        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMarca.TabIndex = 12
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(257, 230)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Marca"
         '
         'perfil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBoxMarca)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.ButtonVolver)
         Me.Controls.Add(Me.ButtonAgregar)
         Me.Controls.Add(Me.TextBoxProducto)
         Me.Controls.Add(Me.TextBoxPrecio)
@@ -147,5 +167,7 @@ Partial Class perfil
     Friend WithEvents TextBoxPrecio As TextBox
     Friend WithEvents TextBoxProducto As TextBox
     Friend WithEvents ButtonAgregar As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonVolver As Button
+    Friend WithEvents TextBoxMarca As TextBox
+    Friend WithEvents Label5 As Label
 End Class
