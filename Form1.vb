@@ -21,10 +21,6 @@ Public Class FormBuscar
 
         DataGridView1.DataSource = table
 
-        'Dim SelectRow As DataGridViewRow
-        'SelectRow = DataGridView1.Rows(0)
-        'Label1.Text = SelectRow.Cells(0).Value.ToString()
-        'Label2.Text = SelectRow.Cells(2).Value.ToString()
 
     End Sub
 

@@ -38,15 +38,24 @@ Public Class Inicio_secion
 
     Private Sub ButtonRegistrar_Click(sender As Object, e As EventArgs) Handles ButtonRegistrar.Click
         Dim registro As New SqlCommand("INSERT INTO Usuarios (Usuario, Contrasena) VALUES (@Usuario, @Contrasena)", Connect)
-        registro.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
-        registro.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
-        Connect.Open()
-        If registro.ExecuteNonQuery = 1 Then
-            MessageBox.Show("Registro Exitoso")
+        If TextBox1.Text = "" Then
+            MessageBox.Show("Ingrese un usuario")
         Else
-            MessageBox.Show("Registro no Exitoso")
+            If TextBox2.Text = "" Then
+                MessageBox.Show("Ingrese una contraseña")
+            Else
+                registro.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
+                registro.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
+                Connect.Open()
+                If registro.ExecuteNonQuery = 1 Then
+                    MessageBox.Show("Registro Exitoso")
+                Else
+                    MessageBox.Show("Registro no Exitoso")
+                End If
+                Connect.Close()
+                Call IniSesion()
+            End If
         End If
-        Connect.Close()
-        Call IniSesion()
+
     End Sub
 End Class
