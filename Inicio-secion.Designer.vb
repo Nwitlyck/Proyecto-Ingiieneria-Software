@@ -32,16 +32,18 @@ Partial Class Inicio_secion
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(378, 153)
+        Me.TextBox1.Location = New System.Drawing.Point(567, 235)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(198, 26)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(378, 216)
+        Me.TextBox2.Location = New System.Drawing.Point(567, 332)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(198, 26)
         Me.TextBox2.TabIndex = 1
         Me.TextBox2.UseSystemPasswordChar = True
         '
@@ -49,7 +51,8 @@ Partial Class Inicio_secion
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(267, 151)
+        Me.Label1.Location = New System.Drawing.Point(400, 232)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(64, 20)
         Me.Label1.TabIndex = 2
@@ -59,7 +62,8 @@ Partial Class Inicio_secion
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label2.Location = New System.Drawing.Point(257, 216)
+        Me.Label2.Location = New System.Drawing.Point(386, 332)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(92, 20)
         Me.Label2.TabIndex = 3
@@ -67,35 +71,40 @@ Partial Class Inicio_secion
         '
         'ButtonRegistrar
         '
-        Me.ButtonRegistrar.Location = New System.Drawing.Point(261, 276)
+        Me.ButtonRegistrar.Location = New System.Drawing.Point(392, 425)
+        Me.ButtonRegistrar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
-        Me.ButtonRegistrar.Size = New System.Drawing.Size(91, 31)
+        Me.ButtonRegistrar.Size = New System.Drawing.Size(136, 48)
         Me.ButtonRegistrar.TabIndex = 4
         Me.ButtonRegistrar.Text = "Registrar"
         Me.ButtonRegistrar.UseVisualStyleBackColor = True
         '
         'ButtonIniciosesion
         '
-        Me.ButtonIniciosesion.Location = New System.Drawing.Point(410, 276)
+        Me.ButtonIniciosesion.Location = New System.Drawing.Point(615, 425)
+        Me.ButtonIniciosesion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ButtonIniciosesion.Name = "ButtonIniciosesion"
-        Me.ButtonIniciosesion.Size = New System.Drawing.Size(101, 31)
+        Me.ButtonIniciosesion.Size = New System.Drawing.Size(152, 48)
         Me.ButtonIniciosesion.TabIndex = 5
         Me.ButtonIniciosesion.Text = "Iniciar Sesion"
         Me.ButtonIniciosesion.UseVisualStyleBackColor = True
         '
         'Inicio_secion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(1200, 692)
         Me.Controls.Add(Me.ButtonIniciosesion)
         Me.Controls.Add(Me.ButtonRegistrar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Inicio_secion"
-        Me.Text = "Inicio_secion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Inicio Secion"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

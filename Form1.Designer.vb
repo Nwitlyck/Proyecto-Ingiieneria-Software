@@ -23,7 +23,6 @@ Partial Class FormBuscar
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.BotonMenu = New System.Windows.Forms.Button()
-        Me.BotonCuenta = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -34,36 +33,30 @@ Partial Class FormBuscar
         '
         'BotonMenu
         '
-        Me.BotonMenu.Location = New System.Drawing.Point(-248, -134)
+        Me.BotonMenu.Location = New System.Drawing.Point(-372, -206)
+        Me.BotonMenu.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BotonMenu.Name = "BotonMenu"
-        Me.BotonMenu.Size = New System.Drawing.Size(50, 48)
+        Me.BotonMenu.Size = New System.Drawing.Size(75, 74)
         Me.BotonMenu.TabIndex = 45
         Me.BotonMenu.Text = "Menu"
         Me.BotonMenu.UseVisualStyleBackColor = True
         '
-        'BotonCuenta
-        '
-        Me.BotonCuenta.Location = New System.Drawing.Point(1192, 10)
-        Me.BotonCuenta.Name = "BotonCuenta"
-        Me.BotonCuenta.Size = New System.Drawing.Size(112, 48)
-        Me.BotonCuenta.TabIndex = 44
-        Me.BotonCuenta.Text = "Cuenta"
-        Me.BotonCuenta.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.DarkGray
-        Me.PictureBox1.Location = New System.Drawing.Point(-7, -3)
+        Me.PictureBox1.Location = New System.Drawing.Point(-10, -5)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1324, 76)
+        Me.PictureBox1.Size = New System.Drawing.Size(1986, 117)
         Me.PictureBox1.TabIndex = 43
         Me.PictureBox1.TabStop = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 10)
+        Me.Button1.Location = New System.Drawing.Point(18, 15)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 48)
+        Me.Button1.Size = New System.Drawing.Size(168, 74)
         Me.Button1.TabIndex = 91
         Me.Button1.Text = "Cuenta"
         Me.Button1.UseVisualStyleBackColor = True
@@ -71,31 +64,35 @@ Partial Class FormBuscar
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.Location = New System.Drawing.Point(132, 264)
+        Me.DataGridView1.Location = New System.Drawing.Point(198, 406)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(937, 323)
+        Me.DataGridView1.Size = New System.Drawing.Size(1406, 497)
         Me.DataGridView1.TabIndex = 92
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(132, 151)
+        Me.TextBox1.Location = New System.Drawing.Point(198, 232)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(937, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(1404, 26)
         Me.TextBox1.TabIndex = 93
         '
         'FormBuscar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1199, 778)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(1798, 1061)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BotonMenu)
-        Me.Controls.Add(Me.BotonCuenta)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormBuscar"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Main"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -103,7 +100,6 @@ Partial Class FormBuscar
 
     End Sub
     Friend WithEvents BotonMenu As Button
-    Friend WithEvents BotonCuenta As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
