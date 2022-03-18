@@ -11,7 +11,7 @@ Public Class FormBuscar
 
     Public Sub FilterData(valueToSearch As String)
 
-        Dim searchQuery As String = "SELECT * From BuscadorPro WHERE CONCAT(NombrePro,CodigoPro,Precio,Supermercado,Marca) like '%" & valueToSearch & "%' ORDER BY Precio"
+        Dim searchQuery As String = "SELECT * From BuscadorPro WHERE CONCAT(NombrePro,Precio,Supermercado,Marca) like '%" & valueToSearch & "%' ORDER BY Precio"
 
         Dim command As New SqlCommand(searchQuery, Connect)
         Dim adapter As New SqlDataAdapter(command)
@@ -35,5 +35,9 @@ Public Class FormBuscar
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         perfil.Show()
         Me.Close()
+    End Sub
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+
     End Sub
 End Class

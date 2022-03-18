@@ -67,7 +67,7 @@ Partial Class FormBuscar
         Me.DataGridView1.Location = New System.Drawing.Point(198, 406)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1406, 497)
+        Me.DataGridView1.Size = New System.Drawing.Size(818, 497)
         Me.DataGridView1.TabIndex = 92
         '
         'TextBox1
@@ -75,7 +75,7 @@ Partial Class FormBuscar
         Me.TextBox1.Location = New System.Drawing.Point(198, 232)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1404, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(818, 26)
         Me.TextBox1.TabIndex = 93
         '
         'FormBuscar
@@ -83,7 +83,7 @@ Partial Class FormBuscar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1798, 1061)
+        Me.ClientSize = New System.Drawing.Size(1206, 1061)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)

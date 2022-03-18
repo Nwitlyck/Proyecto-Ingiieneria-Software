@@ -25,6 +25,8 @@ Public Class Inicio_secion
                 Else
 
                     MessageBox.Show("Inicio de sesion correcto")
+                    TextBox1.Text = ""
+                    TextBox2.Text = ""
                     FormBuscar.Show()
                     Me.Close()
                 End If
@@ -53,9 +55,9 @@ Public Class Inicio_secion
                     MessageBox.Show("Registro no Exitoso")
                 End If
                 Connect.Close()
-                Call IniSesion()
             End If
         End If
 
     End Sub
+
 End Class
