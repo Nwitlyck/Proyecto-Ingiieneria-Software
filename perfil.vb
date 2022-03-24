@@ -26,7 +26,7 @@ Public Class perfil
 
     End Sub
 
-    Private Sub Buttonvolver_Click(sender As Object, e As EventArgs) Handles ButtonVolver.Click
+    Private Sub Buttonvolver_Click(sender As Object, e As EventArgs) 
         FormBuscar.Show()
         Me.Close()
     End Sub

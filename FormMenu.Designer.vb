@@ -25,9 +25,9 @@ Partial Class FormMenu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.panelcabecera = New System.Windows.Forms.Panel()
+        Me.btnmax = New System.Windows.Forms.Button()
         Me.btnres = New System.Windows.Forms.Button()
         Me.btnmin = New System.Windows.Forms.Button()
-        Me.btnmax = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.panelmenu = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -66,6 +66,21 @@ Partial Class FormMenu
         Me.panelcabecera.Size = New System.Drawing.Size(1212, 40)
         Me.panelcabecera.TabIndex = 1
         '
+        'btnmax
+        '
+        Me.btnmax.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnmax.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnmax.FlatAppearance.BorderSize = 0
+        Me.btnmax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnmax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
+        Me.btnmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnmax.Image = CType(resources.GetObject("btnmax.Image"), System.Drawing.Image)
+        Me.btnmax.Location = New System.Drawing.Point(1123, 0)
+        Me.btnmax.Name = "btnmax"
+        Me.btnmax.Size = New System.Drawing.Size(40, 40)
+        Me.btnmax.TabIndex = 2
+        Me.btnmax.UseVisualStyleBackColor = True
+        '
         'btnres
         '
         Me.btnres.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -96,21 +111,6 @@ Partial Class FormMenu
         Me.btnmin.Size = New System.Drawing.Size(40, 40)
         Me.btnmin.TabIndex = 5
         Me.btnmin.UseVisualStyleBackColor = True
-        '
-        'btnmax
-        '
-        Me.btnmax.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnmax.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnmax.FlatAppearance.BorderSize = 0
-        Me.btnmax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnmax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
-        Me.btnmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnmax.Image = CType(resources.GetObject("btnmax.Image"), System.Drawing.Image)
-        Me.btnmax.Location = New System.Drawing.Point(1123, 0)
-        Me.btnmax.Name = "btnmax"
-        Me.btnmax.Size = New System.Drawing.Size(40, 40)
-        Me.btnmax.TabIndex = 2
-        Me.btnmax.UseVisualStyleBackColor = True
         '
         'btncerrar
         '
@@ -343,7 +343,7 @@ Partial Class FormMenu
         'mostmenu
         '
         '
-        'menu
+        'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -352,7 +352,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.panelmenu)
         Me.Controls.Add(Me.panelcabecera)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "menu"
+        Me.Name = "FormMenu"
         Me.Text = "menu"
         Me.panelcabecera.ResumeLayout(False)
         Me.panelmenu.ResumeLayout(False)

@@ -1,5 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
+Imports System.Data.SqlClient
 Public Class FormMenu
+    Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -12,6 +14,13 @@ Public Class FormMenu
     End Sub
 
     Private Sub btncerrar_Click(sender As Object, e As EventArgs) Handles btncerrar.Click
+        Dim limpiar As New SqlCommand("DELETE FROM Lista ", Connect)
+        Connect.Open()
+        If limpiar.ExecuteNonQuery() = 1 Then
+        Else
+        End If
+        Connect.Close()
+        InicioSesion.Show()
         Me.Close()
     End Sub
 
@@ -78,7 +87,22 @@ Public Class FormMenu
     End Sub
 
     Private Sub btncerrarsesion_Click(sender As Object, e As EventArgs) Handles btncerrarsesion.Click
+        Dim limpiar As New SqlCommand("DELETE FROM Lista ", Connect)
+        Connect.Open()
+        If limpiar.ExecuteNonQuery() = 1 Then
+        Else
+        End If
+        Connect.Close()
         InicioSesion.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnperfil_Click(sender As Object, e As EventArgs) Handles btnperfil.Click
+        AbrirFomEnPanel(New perfil)
+
+    End Sub
+
+    Private Sub btnlista_Click(sender As Object, e As EventArgs) Handles btnlista.Click
+        AbrirFomEnPanel(New FormListaCompras)
     End Sub
 End Class

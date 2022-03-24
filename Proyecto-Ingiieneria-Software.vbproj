@@ -95,6 +95,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormListaCompras.Designer.vb">
+      <DependentUpon>FormListaCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inicio de sesion.Designer.vb">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>
     </Compile>
@@ -112,12 +118,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="My Project\menu.Designer.vb">
-      <DependentUpon>menu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\menu.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -140,14 +140,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListaCompras.resx">
+      <DependentUpon>FormListaCompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio de sesion.resx">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="My Project\menu.resx">
-      <DependentUpon>menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

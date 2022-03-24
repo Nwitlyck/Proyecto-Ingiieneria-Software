@@ -32,8 +32,6 @@ Public Class InicioSesion
                 Else
 
                     MessageBox.Show("Inicio de sesion correcto")
-                    TextBox1.Text = ""
-                    TextBox2.Text = ""
                     FormMenu.Show()
                     Me.Close()
                 End If
@@ -69,7 +67,6 @@ Public Class InicioSesion
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles btncerrar.Click
         Me.Close()
-
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles btnmin.Click
