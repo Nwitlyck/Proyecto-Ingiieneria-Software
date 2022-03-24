@@ -1,5 +1,12 @@
 ﻿Imports System.Data.SqlClient
-Public Class Inicio_secion
+Imports System.Runtime.InteropServices
+Public Class InicioSesion
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
 
     Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Public Sub IniSesion()
@@ -27,7 +34,7 @@ Public Class Inicio_secion
                     MessageBox.Show("Inicio de sesion correcto")
                     TextBox1.Text = ""
                     TextBox2.Text = ""
-                    FormBuscar.Show()
+                    FormMenu.Show()
                     Me.Close()
                 End If
             End If
@@ -59,5 +66,32 @@ Public Class Inicio_secion
         End If
 
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles btncerrar.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles btnmin.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnres_Click(sender As Object, e As EventArgs) Handles btnres.Click
+        btnres.Visible = False
+        btnmax.Visible = True
+        Me.WindowState = FormWindowState.Normal
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles btnmax.Click
+        btnmax.Visible = False
+        btnres.Visible = True
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub Panel2_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel2.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
 
 End Class
