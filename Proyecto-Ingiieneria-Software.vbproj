@@ -88,6 +88,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CamiarContraseña.Designer.vb">
+      <DependentUpon>CamiarContraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CamiarContraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
       <DependentUpon>FormListaCompras.vb</DependentUpon>
     </Compile>
     <Compile Include="FormListaCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerfilUsuarios.Designer.vb">
+      <DependentUpon>FormPerfilUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerfilUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistrar.Designer.vb">
@@ -143,11 +155,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CamiarContraseña.resx">
+      <DependentUpon>CamiarContraseña.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaCompras.resx">
       <DependentUpon>FormListaCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerfilUsuarios.resx">
+      <DependentUpon>FormPerfilUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrar.resx">
       <DependentUpon>FormRegistrar.vb</DependentUpon>
@@ -194,6 +212,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-g888983ebd_640.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

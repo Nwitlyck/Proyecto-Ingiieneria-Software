@@ -31,16 +31,17 @@ Partial Class InicioSesion
         Me.ButtonIniciosesion = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnmin = New System.Windows.Forms.PictureBox()
         Me.btnmax = New System.Windows.Forms.PictureBox()
         Me.btncerrar = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnres = New System.Windows.Forms.PictureBox()
+        Me.ButtonCC = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmax, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnres, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -124,6 +125,17 @@ Partial Class InicioSesion
         Me.Panel2.Size = New System.Drawing.Size(714, 31)
         Me.Panel2.TabIndex = 11
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(50, 119)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(229, 204)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'btnmin
         '
         Me.btnmin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -160,17 +172,6 @@ Partial Class InicioSesion
         Me.btncerrar.TabIndex = 7
         Me.btncerrar.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 119)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(229, 204)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'btnres
         '
         Me.btnres.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -183,12 +184,23 @@ Partial Class InicioSesion
         Me.btnres.TabIndex = 10
         Me.btnres.TabStop = False
         '
+        'ButtonCC
+        '
+        Me.ButtonCC.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonCC.Location = New System.Drawing.Point(684, 398)
+        Me.ButtonCC.Name = "ButtonCC"
+        Me.ButtonCC.Size = New System.Drawing.Size(104, 40)
+        Me.ButtonCC.TabIndex = 11
+        Me.ButtonCC.Text = "Olvide Contrasena"
+        Me.ButtonCC.UseVisualStyleBackColor = True
+        '
         'InicioSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonCC)
         Me.Controls.Add(Me.btnmin)
         Me.Controls.Add(Me.btnmax)
         Me.Controls.Add(Me.btncerrar)
@@ -205,10 +217,10 @@ Partial Class InicioSesion
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio Sesion"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmax, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnres, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -228,4 +240,5 @@ Partial Class InicioSesion
     Friend WithEvents btnres As PictureBox
     Friend WithEvents btnmax As PictureBox
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents ButtonCC As Button
 End Class

@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Runtime.InteropServices
+
+
 Public Class InicioSesion
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
@@ -7,6 +9,7 @@ Public Class InicioSesion
     <DllImport("user32.DLL", EntryPoint:="SendMessage")>
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
+    Public x As String
 
     Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Public Sub IniSesion()
@@ -33,7 +36,8 @@ Public Class InicioSesion
 
                     MessageBox.Show("Inicio de sesion correcto")
                     FormMenu.Show()
-                    Me.Close()
+                    x = TextBox1.Text
+                    Me.Hide()
                 End If
             End If
         End If
@@ -82,6 +86,7 @@ Public Class InicioSesion
             FormMenu.Show()
             Me.Close()
         End If
+
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -106,5 +111,10 @@ Public Class InicioSesion
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
+    End Sub
+
+    Private Sub ButtonCC_Click(sender As Object, e As EventArgs) Handles ButtonCC.Click
+        CamiarContraseña.Show()
+        Me.Close()
     End Sub
 End Class

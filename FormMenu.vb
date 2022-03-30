@@ -80,6 +80,8 @@ Public Class FormMenu
     End Sub
 
     Private Sub btncerrarsesion_Click(sender As Object, e As EventArgs) Handles btncerrarsesion.Click
+        InicioSesion.TextBox1.Text = ""
+        InicioSesion.TextBox2.Text = ""
         Dim limpiar As New SqlCommand("DELETE FROM Lista ", Connect)
         Connect.Open()
         If limpiar.ExecuteNonQuery() = 1 Then
@@ -91,11 +93,14 @@ Public Class FormMenu
     End Sub
 
     Private Sub btnperfil_Click(sender As Object, e As EventArgs) Handles btnperfil.Click
-        AbrirFomEnPanel(New perfil)
-
+        AbrirFomEnPanel(New FormPerfilUsuarios)
     End Sub
 
     Private Sub btnlista_Click(sender As Object, e As EventArgs) Handles btnlista.Click
         AbrirFomEnPanel(New FormListaCompras)
+    End Sub
+
+    Private Sub btntiendas_Click(sender As Object, e As EventArgs) Handles btntiendas.Click
+        AbrirFomEnPanel(New perfil)
     End Sub
 End Class

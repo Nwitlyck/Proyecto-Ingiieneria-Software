@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormRegistrar
+Partial Class CamiarContraseña
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,31 +22,28 @@ Partial Class FormRegistrar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRegistrar))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CamiarContraseña))
         Me.btnmin = New System.Windows.Forms.PictureBox()
         Me.btnmax = New System.Windows.Forms.PictureBox()
         Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ButtonIniciosesion = New System.Windows.Forms.Button()
         Me.ButtonRegistrar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxContrarena = New System.Windows.Forms.TextBox()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.btnres = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBoxReContrasena = New System.Windows.Forms.TextBox()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmax, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnres, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnmin
@@ -115,15 +112,26 @@ Partial Class FormRegistrar
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'ButtonIniciosesion
+        '
+        Me.ButtonIniciosesion.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonIniciosesion.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonIniciosesion.Location = New System.Drawing.Point(602, 264)
+        Me.ButtonIniciosesion.Name = "ButtonIniciosesion"
+        Me.ButtonIniciosesion.Size = New System.Drawing.Size(101, 51)
+        Me.ButtonIniciosesion.TabIndex = 16
+        Me.ButtonIniciosesion.Text = "Cambiar Contraseña"
+        Me.ButtonIniciosesion.UseVisualStyleBackColor = True
+        '
         'ButtonRegistrar
         '
         Me.ButtonRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonRegistrar.Font = New System.Drawing.Font("Impact", 10.0!)
-        Me.ButtonRegistrar.Location = New System.Drawing.Point(551, 364)
+        Me.ButtonRegistrar.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRegistrar.Location = New System.Drawing.Point(450, 264)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
-        Me.ButtonRegistrar.Size = New System.Drawing.Size(148, 51)
+        Me.ButtonRegistrar.Size = New System.Drawing.Size(91, 51)
         Me.ButtonRegistrar.TabIndex = 15
-        Me.ButtonRegistrar.Text = "Registrar"
+        Me.ButtonRegistrar.Text = "Volver"
         Me.ButtonRegistrar.UseVisualStyleBackColor = True
         '
         'Label2
@@ -131,39 +139,39 @@ Partial Class FormRegistrar
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(388, 100)
+        Me.Label2.Location = New System.Drawing.Point(431, 130)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.Size = New System.Drawing.Size(129, 20)
         Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Contraseña"
+        Me.Label2.Text = "Nueva Contraseña"
         '
         'Label1
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(388, 34)
+        Me.Label1.Location = New System.Drawing.Point(465, 91)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 20)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Usuario"
         '
-        'TextBox2
+        'TextBoxContrarena
         '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.Location = New System.Drawing.Point(566, 133)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox2.TabIndex = 12
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.TextBoxContrarena.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBoxContrarena.Location = New System.Drawing.Point(586, 152)
+        Me.TextBoxContrarena.Name = "TextBoxContrarena"
+        Me.TextBoxContrarena.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxContrarena.TabIndex = 12
+        Me.TextBoxContrarena.UseSystemPasswordChar = True
         '
-        'TextBox1
+        'TextBoxNombre
         '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Location = New System.Drawing.Point(566, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox1.TabIndex = 11
+        Me.TextBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBoxNombre.Location = New System.Drawing.Point(586, 110)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxNombre.TabIndex = 11
         '
         'btnres
         '
@@ -182,83 +190,49 @@ Partial Class FormRegistrar
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(388, 166)
+        Me.Label3.Location = New System.Drawing.Point(430, 172)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 20)
+        Me.Label3.Size = New System.Drawing.Size(130, 20)
         Me.Label3.TabIndex = 23
-        Me.Label3.Text = "Contraseña (Repita) "
+        Me.Label3.Text = "Repita Contraseña"
         '
-        'TextBox3
+        'TextBoxReContrasena
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.Location = New System.Drawing.Point(566, 199)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox3.TabIndex = 22
-        Me.TextBox3.UseSystemPasswordChar = True
+        Me.TextBoxReContrasena.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBoxReContrasena.Location = New System.Drawing.Point(586, 194)
+        Me.TextBoxReContrasena.Name = "TextBoxReContrasena"
+        Me.TextBoxReContrasena.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxReContrasena.TabIndex = 22
+        Me.TextBoxReContrasena.UseSystemPasswordChar = True
         '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(388, 232)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 20)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Edad"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(566, 265)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(133, 20)
-        Me.NumericUpDown1.TabIndex = 27
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(392, 364)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 51)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Volver"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'FormRegistrar
+        'CamiarContraseña
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBoxReContrasena)
         Me.Controls.Add(Me.btnmin)
         Me.Controls.Add(Me.btnmax)
         Me.Controls.Add(Me.btncerrar)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.ButtonIniciosesion)
         Me.Controls.Add(Me.ButtonRegistrar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxContrarena)
+        Me.Controls.Add(Me.TextBoxNombre)
         Me.Controls.Add(Me.btnres)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FormRegistrar"
+        Me.Name = "CamiarContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registrar"
+        Me.Text = "CamiarContraseña"
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmax, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnres, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -270,15 +244,13 @@ Partial Class FormRegistrar
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ButtonIniciosesion As Button
     Friend WithEvents ButtonRegistrar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxContrarena As TextBox
+    Friend WithEvents TextBoxNombre As TextBox
     Friend WithEvents btnres As PictureBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBoxReContrasena As TextBox
 End Class
