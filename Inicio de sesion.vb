@@ -44,29 +44,12 @@ Public Class InicioSesion
     End Sub
 
     Private Sub ButtonRegistrar_Click(sender As Object, e As EventArgs) Handles ButtonRegistrar.Click
-        Dim registro As New SqlCommand("INSERT INTO Usuarios (Usuario, Contrasena) VALUES (@Usuario, @Contrasena)", Connect)
-        If TextBox1.Text = "" Then
-            MessageBox.Show("Ingrese un usuario")
-        Else
-            If TextBox2.Text = "" Then
-                MessageBox.Show("Ingrese una contraseña")
-            Else
-                registro.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
-                registro.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
-                Connect.Open()
-                If registro.ExecuteNonQuery = 1 Then
-                    MessageBox.Show("Registro Exitoso")
-                Else
-                    MessageBox.Show("Registro no Exitoso")
-                End If
-                Connect.Close()
-            End If
-        End If
-
+        FormRegistrar.Show()
+        Me.Close()
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles btncerrar.Click
-        Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles btnmin.Click
@@ -90,5 +73,38 @@ Public Class InicioSesion
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
+    Private Sub InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim adapter As New SqlDataAdapter("SELECT * FROM Lista", Connect)
+        Dim table As New DataTable()
+        adapter.Fill(table)
+        Dim tanke = table.Rows.Count
+        If tanke > 1 Then
+            FormMenu.Show()
+            Me.Close()
+        End If
+    End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

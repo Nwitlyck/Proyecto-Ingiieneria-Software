@@ -101,6 +101,12 @@
     <Compile Include="FormListaCompras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormRegistrar.Designer.vb">
+      <DependentUpon>FormRegistrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inicio de sesion.Designer.vb">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaCompras.resx">
       <DependentUpon>FormListaCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrar.resx">
+      <DependentUpon>FormRegistrar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio de sesion.resx">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>

@@ -14,14 +14,7 @@ Public Class FormMenu
     End Sub
 
     Private Sub btncerrar_Click(sender As Object, e As EventArgs) Handles btncerrar.Click
-        Dim limpiar As New SqlCommand("DELETE FROM Lista ", Connect)
-        Connect.Open()
-        If limpiar.ExecuteNonQuery() = 1 Then
-        Else
-        End If
-        Connect.Close()
-        InicioSesion.Show()
-        Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub btnmax_Click(sender As Object, e As EventArgs) Handles btnmax.Click
