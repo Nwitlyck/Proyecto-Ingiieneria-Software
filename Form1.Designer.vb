@@ -53,17 +53,18 @@ Partial Class FormBuscar
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
         Me.TextBox1.Location = New System.Drawing.Point(79, 132)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(854, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(854, 27)
         Me.TextBox1.TabIndex = 93
         '
         'ButtonAgregaradeseados
         '
-        Me.ButtonAgregaradeseados.Location = New System.Drawing.Point(12, 655)
+        Me.ButtonAgregaradeseados.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
+        Me.ButtonAgregaradeseados.Location = New System.Drawing.Point(12, 654)
         Me.ButtonAgregaradeseados.Name = "ButtonAgregaradeseados"
-        Me.ButtonAgregaradeseados.Size = New System.Drawing.Size(140, 23)
+        Me.ButtonAgregaradeseados.Size = New System.Drawing.Size(147, 31)
         Me.ButtonAgregaradeseados.TabIndex = 95
         Me.ButtonAgregaradeseados.Text = "Agregar a deseados"
         Me.ButtonAgregaradeseados.UseVisualStyleBackColor = True

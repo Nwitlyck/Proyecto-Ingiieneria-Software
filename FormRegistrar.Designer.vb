@@ -151,18 +151,20 @@ Partial Class FormRegistrar
         'TextBox2
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.TextBox2.Location = New System.Drawing.Point(485, 149)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(163, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(163, 24)
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.UseSystemPasswordChar = True
         '
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.TextBox1.Location = New System.Drawing.Point(485, 75)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(163, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(163, 24)
         Me.TextBox1.TabIndex = 11
         '
         'btnres
@@ -191,9 +193,10 @@ Partial Class FormRegistrar
         'TextBox3
         '
         Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.TextBox3.Location = New System.Drawing.Point(485, 226)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(163, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(163, 24)
         Me.TextBox3.TabIndex = 22
         Me.TextBox3.UseSystemPasswordChar = True
         '
@@ -211,9 +214,10 @@ Partial Class FormRegistrar
         'NumericUpDown1
         '
         Me.NumericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.NumericUpDown1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.NumericUpDown1.Location = New System.Drawing.Point(485, 298)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(163, 20)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(163, 24)
         Me.NumericUpDown1.TabIndex = 27
         Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '

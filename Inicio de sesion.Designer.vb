@@ -48,17 +48,19 @@ Partial Class InicioSesion
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.TextBox1.Location = New System.Drawing.Point(566, 141)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(133, 24)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
         Me.TextBox2.Location = New System.Drawing.Point(566, 204)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(133, 24)
         Me.TextBox2.TabIndex = 1
         Me.TextBox2.UseSystemPasswordChar = True
         '
@@ -88,9 +90,9 @@ Partial Class InicioSesion
         '
         Me.ButtonRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonRegistrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
-        Me.ButtonRegistrar.Location = New System.Drawing.Point(449, 264)
+        Me.ButtonRegistrar.Location = New System.Drawing.Point(464, 292)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
-        Me.ButtonRegistrar.Size = New System.Drawing.Size(91, 31)
+        Me.ButtonRegistrar.Size = New System.Drawing.Size(101, 31)
         Me.ButtonRegistrar.TabIndex = 4
         Me.ButtonRegistrar.Text = "Registrar"
         Me.ButtonRegistrar.UseVisualStyleBackColor = True
@@ -99,7 +101,7 @@ Partial Class InicioSesion
         '
         Me.ButtonIniciosesion.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonIniciosesion.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
-        Me.ButtonIniciosesion.Location = New System.Drawing.Point(598, 264)
+        Me.ButtonIniciosesion.Location = New System.Drawing.Point(581, 292)
         Me.ButtonIniciosesion.Name = "ButtonIniciosesion"
         Me.ButtonIniciosesion.Size = New System.Drawing.Size(101, 31)
         Me.ButtonIniciosesion.TabIndex = 5

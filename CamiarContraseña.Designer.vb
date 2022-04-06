@@ -159,18 +159,20 @@ Partial Class CamiarContraseña
         'TextBoxContrarena
         '
         Me.TextBoxContrarena.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxContrarena.Location = New System.Drawing.Point(581, 179)
+        Me.TextBoxContrarena.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.TextBoxContrarena.Location = New System.Drawing.Point(581, 173)
         Me.TextBoxContrarena.Name = "TextBoxContrarena"
-        Me.TextBoxContrarena.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxContrarena.Size = New System.Drawing.Size(133, 24)
         Me.TextBoxContrarena.TabIndex = 12
         Me.TextBoxContrarena.UseSystemPasswordChar = True
         '
         'TextBoxNombre
         '
         Me.TextBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxNombre.Location = New System.Drawing.Point(581, 137)
+        Me.TextBoxNombre.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(581, 133)
         Me.TextBoxNombre.Name = "TextBoxNombre"
-        Me.TextBoxNombre.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxNombre.Size = New System.Drawing.Size(133, 24)
         Me.TextBoxNombre.TabIndex = 11
         '
         'btnres
@@ -199,9 +201,10 @@ Partial Class CamiarContraseña
         'TextBoxReContrasena
         '
         Me.TextBoxReContrasena.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxReContrasena.Location = New System.Drawing.Point(581, 221)
+        Me.TextBoxReContrasena.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.TextBoxReContrasena.Location = New System.Drawing.Point(581, 217)
         Me.TextBoxReContrasena.Name = "TextBoxReContrasena"
-        Me.TextBoxReContrasena.Size = New System.Drawing.Size(133, 20)
+        Me.TextBoxReContrasena.Size = New System.Drawing.Size(133, 24)
         Me.TextBoxReContrasena.TabIndex = 22
         Me.TextBoxReContrasena.UseSystemPasswordChar = True
         '

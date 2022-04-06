@@ -79,30 +79,34 @@ Partial Class perfil
         '
         'TextBoxNombrePro
         '
-        Me.TextBoxNombrePro.Location = New System.Drawing.Point(439, 252)
+        Me.TextBoxNombrePro.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.0!)
+        Me.TextBoxNombrePro.Location = New System.Drawing.Point(439, 248)
         Me.TextBoxNombrePro.Name = "TextBoxNombrePro"
-        Me.TextBoxNombrePro.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxNombrePro.Size = New System.Drawing.Size(100, 22)
         Me.TextBoxNombrePro.TabIndex = 4
         '
         'TextBoxSupermercado
         '
-        Me.TextBoxSupermercado.Location = New System.Drawing.Point(439, 332)
+        Me.TextBoxSupermercado.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.0!)
+        Me.TextBoxSupermercado.Location = New System.Drawing.Point(438, 330)
         Me.TextBoxSupermercado.Name = "TextBoxSupermercado"
-        Me.TextBoxSupermercado.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxSupermercado.Size = New System.Drawing.Size(100, 22)
         Me.TextBoxSupermercado.TabIndex = 5
         '
         'TextBoxPrecio
         '
-        Me.TextBoxPrecio.Location = New System.Drawing.Point(439, 291)
+        Me.TextBoxPrecio.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.0!)
+        Me.TextBoxPrecio.Location = New System.Drawing.Point(438, 286)
         Me.TextBoxPrecio.Name = "TextBoxPrecio"
-        Me.TextBoxPrecio.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxPrecio.Size = New System.Drawing.Size(100, 22)
         Me.TextBoxPrecio.TabIndex = 6
         '
         'TextBoxProducto
         '
-        Me.TextBoxProducto.Location = New System.Drawing.Point(439, 212)
+        Me.TextBoxProducto.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.0!)
+        Me.TextBoxProducto.Location = New System.Drawing.Point(439, 210)
         Me.TextBoxProducto.Name = "TextBoxProducto"
-        Me.TextBoxProducto.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxProducto.Size = New System.Drawing.Size(100, 22)
         Me.TextBoxProducto.TabIndex = 7
         '
         'ButtonAgregar
@@ -117,9 +121,10 @@ Partial Class perfil
         '
         'TextBoxMarca
         '
-        Me.TextBoxMarca.Location = New System.Drawing.Point(439, 372)
+        Me.TextBoxMarca.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.0!)
+        Me.TextBoxMarca.Location = New System.Drawing.Point(438, 367)
         Me.TextBoxMarca.Name = "TextBoxMarca"
-        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxMarca.Size = New System.Drawing.Size(100, 22)
         Me.TextBoxMarca.TabIndex = 12
         '
         'Label5
