@@ -165,7 +165,7 @@ Partial Class FormPerfilUsuarios
         Me.User.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.User.AutoSize = True
         Me.User.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.User.Location = New System.Drawing.Point(169, 263)
+        Me.User.Location = New System.Drawing.Point(116, 263)
         Me.User.Name = "User"
         Me.User.Size = New System.Drawing.Size(38, 23)
         Me.User.TabIndex = 23
