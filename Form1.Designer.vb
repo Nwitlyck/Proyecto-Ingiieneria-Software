@@ -26,7 +26,12 @@ Partial Class FormBuscar
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ButtonAgregaradeseados = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BotonMenu
@@ -41,16 +46,17 @@ Partial Class FormBuscar
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.Location = New System.Drawing.Point(132, 264)
+        Me.DataGridView1.Location = New System.Drawing.Point(39, 245)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(545, 323)
         Me.DataGridView1.TabIndex = 92
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(132, 151)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(79, 132)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(547, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(854, 26)
         Me.TextBox1.TabIndex = 93
         '
         'ButtonAgregaradeseados
@@ -62,21 +68,57 @@ Partial Class FormBuscar
         Me.ButtonAgregaradeseados.Text = "Agregar a deseados"
         Me.ButtonAgregaradeseados.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label1.Location = New System.Drawing.Point(14, 11)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(95, 31)
+        Me.Label1.TabIndex = 96
+        Me.Label1.Text = "Label1"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(631, 245)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(302, 323)
+        Me.Panel1.TabIndex = 98
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Proyecto_Ingiieneria_Software.My.Resources.Resources.sada
+        Me.PictureBox1.Location = New System.Drawing.Point(39, 132)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(34, 26)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 97
+        Me.PictureBox1.TabStop = False
+        '
         'FormBuscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(798, 690)
+        Me.ClientSize = New System.Drawing.Size(972, 706)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ButtonAgregaradeseados)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BotonMenu)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormBuscar"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -85,4 +127,7 @@ Partial Class FormBuscar
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ButtonAgregaradeseados As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class

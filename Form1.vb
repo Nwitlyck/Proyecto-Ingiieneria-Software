@@ -62,6 +62,11 @@ Public Class FormBuscar
         dos = lineaselecionada.Cells(2).Value
         tres = lineaselecionada.Cells(3).Value.ToString
         cuatro = lineaselecionada.Cells(4).Value.ToString
+        Dim txt As String
+        For x As Integer = 0 To 4 Step 1
+            txt += lineaselecionada.Cells(x).Value.ToString + vbCrLf + vbCrLf
+        Next
+        Label1.Text = txt
 
     End Sub
 

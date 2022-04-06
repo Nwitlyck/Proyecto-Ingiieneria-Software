@@ -36,8 +36,7 @@ Public Class FormRegistrar
             MessageBox.Show("Ingrese un usuario")
         Else
             If NumericUpDown1.Value < 18 Then
-                MessageBox.Show("Hijo de puta no use esta app hasta que tengas 18")
-                NumericUpDown1.Value = 18
+                MessageBox.Show("Ocupas 18 para poder registrarte")
             Else
                 If TextBox2.Text = "" Then
                     MessageBox.Show("Ingrese una contraseña")

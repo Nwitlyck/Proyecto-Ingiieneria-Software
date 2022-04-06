@@ -216,5 +216,8 @@
   <ItemGroup>
     <None Include="Resources\profile-g888983ebd_640.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sada.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
