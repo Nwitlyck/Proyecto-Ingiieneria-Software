@@ -11,7 +11,7 @@ Public Class InicioSesion
     End Sub
     Public x As String
 
-    Dim Connect As New SqlConnection(“Data Source = DYLAN-PC\MSSQLSERVER01; Initial Catalog = ProyectoDatos; Integrated Security = True”)
+    Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Public Sub IniSesion()
         If TextBox1.Text = "" Then
             MessageBox.Show("Ingrese un usuario")
