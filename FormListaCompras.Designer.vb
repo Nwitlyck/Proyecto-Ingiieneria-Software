@@ -33,7 +33,7 @@ Partial Class FormListaCompras
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.Location = New System.Drawing.Point(197, 157)
+        Me.DataGridView1.Location = New System.Drawing.Point(194, 152)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(545, 323)
         Me.DataGridView1.TabIndex = 93
