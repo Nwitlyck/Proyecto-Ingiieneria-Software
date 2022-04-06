@@ -29,6 +29,7 @@ Partial Class FormBuscar
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,10 +46,15 @@ Partial Class FormBuscar
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.Location = New System.Drawing.Point(39, 245)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(545, 323)
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(545, 344)
         Me.DataGridView1.TabIndex = 92
         '
         'TextBox1
@@ -77,9 +83,8 @@ Partial Class FormBuscar
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Location = New System.Drawing.Point(14, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 35)
+        Me.Label1.Size = New System.Drawing.Size(0, 35)
         Me.Label1.TabIndex = 96
-        Me.Label1.Text = "Label1"
         '
         'Panel1
         '
@@ -87,7 +92,7 @@ Partial Class FormBuscar
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(631, 245)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(302, 323)
+        Me.Panel1.Size = New System.Drawing.Size(302, 344)
         Me.Panel1.TabIndex = 98
         '
         'PictureBox1
@@ -100,12 +105,23 @@ Partial Class FormBuscar
         Me.PictureBox1.TabIndex = 97
         Me.PictureBox1.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 27.75!)
+        Me.Label2.Location = New System.Drawing.Point(31, 84)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(105, 45)
+        Me.Label2.TabIndex = 99
+        Me.Label2.Text = "Buscar"
+        '
         'FormBuscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(972, 706)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ButtonAgregaradeseados)
@@ -131,4 +147,5 @@ Partial Class FormBuscar
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label2 As Label
 End Class
