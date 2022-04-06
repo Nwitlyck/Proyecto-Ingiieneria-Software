@@ -39,7 +39,6 @@ Partial Class FormPerfilUsuarios
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBoxCelular = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownEdad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +50,7 @@ Partial Class FormPerfilUsuarios
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.Proyecto_Ingiieneria_Software.My.Resources.Resources.profile_g888983ebd_640
-        Me.PictureBox1.Location = New System.Drawing.Point(135, 147)
+        Me.PictureBox1.Location = New System.Drawing.Point(120, 122)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(129, 134)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -106,7 +105,7 @@ Partial Class FormPerfilUsuarios
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(524, 121)
+        Me.Label1.Location = New System.Drawing.Point(501, 121)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 23)
         Me.Label1.TabIndex = 17
@@ -116,7 +115,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.TextBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBoxNombre.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(528, 147)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(505, 147)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(190, 30)
         Me.TextBoxNombre.TabIndex = 16
@@ -126,7 +125,7 @@ Partial Class FormPerfilUsuarios
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(524, 230)
+        Me.Label3.Location = New System.Drawing.Point(501, 230)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(187, 23)
         Me.Label3.TabIndex = 19
@@ -136,7 +135,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.TextBox1apellido.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1apellido.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1apellido.Location = New System.Drawing.Point(528, 256)
+        Me.TextBox1apellido.Location = New System.Drawing.Point(505, 256)
         Me.TextBox1apellido.Name = "TextBox1apellido"
         Me.TextBox1apellido.Size = New System.Drawing.Size(190, 30)
         Me.TextBox1apellido.TabIndex = 18
@@ -146,7 +145,7 @@ Partial Class FormPerfilUsuarios
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(524, 339)
+        Me.Label4.Location = New System.Drawing.Point(501, 339)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(183, 23)
         Me.Label4.TabIndex = 21
@@ -156,7 +155,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.TextBox2apellido.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox2apellido.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2apellido.Location = New System.Drawing.Point(528, 365)
+        Me.TextBox2apellido.Location = New System.Drawing.Point(505, 365)
         Me.TextBox2apellido.Name = "TextBox2apellido"
         Me.TextBox2apellido.Size = New System.Drawing.Size(190, 30)
         Me.TextBox2apellido.TabIndex = 20
@@ -166,7 +165,7 @@ Partial Class FormPerfilUsuarios
         Me.User.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.User.AutoSize = True
         Me.User.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.User.Location = New System.Drawing.Point(184, 288)
+        Me.User.Location = New System.Drawing.Point(116, 263)
         Me.User.Name = "User"
         Me.User.Size = New System.Drawing.Size(38, 23)
         Me.User.TabIndex = 23
@@ -177,7 +176,7 @@ Partial Class FormPerfilUsuarios
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(524, 534)
+        Me.Label6.Location = New System.Drawing.Point(501, 534)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(122, 23)
         Me.Label6.TabIndex = 24
@@ -187,7 +186,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.NumericUpDownEdad.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.NumericUpDownEdad.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDownEdad.Location = New System.Drawing.Point(528, 559)
+        Me.NumericUpDownEdad.Location = New System.Drawing.Point(505, 559)
         Me.NumericUpDownEdad.Name = "NumericUpDownEdad"
         Me.NumericUpDownEdad.Size = New System.Drawing.Size(45, 30)
         Me.NumericUpDownEdad.TabIndex = 28
@@ -198,7 +197,7 @@ Partial Class FormPerfilUsuarios
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(524, 448)
+        Me.Label7.Location = New System.Drawing.Point(501, 448)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(120, 23)
         Me.Label7.TabIndex = 30
@@ -208,7 +207,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.TextBoxCelular.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBoxCelular.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxCelular.Location = New System.Drawing.Point(528, 474)
+        Me.TextBoxCelular.Location = New System.Drawing.Point(505, 474)
         Me.TextBoxCelular.Name = "TextBoxCelular"
         Me.TextBoxCelular.Size = New System.Drawing.Size(190, 30)
         Me.TextBoxCelular.TabIndex = 29
@@ -216,28 +215,17 @@ Partial Class FormPerfilUsuarios
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(798, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(822, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(151, 115)
         Me.DataGridView1.TabIndex = 31
         Me.DataGridView1.Visible = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(32, 30)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(86, 45)
-        Me.Label5.TabIndex = 98
-        Me.Label5.Text = "Perfil"
         '
         'FormPerfilUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(972, 706)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBoxCelular)
@@ -284,5 +272,4 @@ Partial Class FormPerfilUsuarios
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBoxCelular As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label5 As Label
 End Class
