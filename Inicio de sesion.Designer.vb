@@ -66,10 +66,10 @@ Partial Class InicioSesion
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(455, 139)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label1.Location = New System.Drawing.Point(469, 136)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
+        Me.Label1.Size = New System.Drawing.Size(58, 23)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Usuario"
         '
@@ -77,17 +77,17 @@ Partial Class InicioSesion
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(445, 204)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label2.Location = New System.Drawing.Point(445, 201)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.Size = New System.Drawing.Size(82, 23)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Contraseña"
         '
         'ButtonRegistrar
         '
         Me.ButtonRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonRegistrar.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRegistrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
         Me.ButtonRegistrar.Location = New System.Drawing.Point(449, 264)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
         Me.ButtonRegistrar.Size = New System.Drawing.Size(91, 31)
@@ -98,7 +98,7 @@ Partial Class InicioSesion
         'ButtonIniciosesion
         '
         Me.ButtonIniciosesion.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonIniciosesion.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonIniciosesion.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
         Me.ButtonIniciosesion.Location = New System.Drawing.Point(598, 264)
         Me.ButtonIniciosesion.Name = "ButtonIniciosesion"
         Me.ButtonIniciosesion.Size = New System.Drawing.Size(101, 31)
@@ -186,12 +186,12 @@ Partial Class InicioSesion
         '
         'ButtonCC
         '
-        Me.ButtonCC.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCC.Location = New System.Drawing.Point(684, 398)
+        Me.ButtonCC.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.ButtonCC.Location = New System.Drawing.Point(678, 404)
         Me.ButtonCC.Name = "ButtonCC"
-        Me.ButtonCC.Size = New System.Drawing.Size(104, 40)
+        Me.ButtonCC.Size = New System.Drawing.Size(110, 34)
         Me.ButtonCC.TabIndex = 11
-        Me.ButtonCC.Text = "Olvide Contrasena"
+        Me.ButtonCC.Text = "Olvide Contraseña"
         Me.ButtonCC.UseVisualStyleBackColor = True
         '
         'InicioSesion

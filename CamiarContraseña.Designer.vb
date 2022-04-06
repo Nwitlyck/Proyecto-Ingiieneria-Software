@@ -115,8 +115,8 @@ Partial Class CamiarContraseña
         'ButtonIniciosesion
         '
         Me.ButtonIniciosesion.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonIniciosesion.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonIniciosesion.Location = New System.Drawing.Point(602, 264)
+        Me.ButtonIniciosesion.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
+        Me.ButtonIniciosesion.Location = New System.Drawing.Point(603, 313)
         Me.ButtonIniciosesion.Name = "ButtonIniciosesion"
         Me.ButtonIniciosesion.Size = New System.Drawing.Size(101, 51)
         Me.ButtonIniciosesion.TabIndex = 16
@@ -126,8 +126,8 @@ Partial Class CamiarContraseña
         'ButtonRegistrar
         '
         Me.ButtonRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonRegistrar.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRegistrar.Location = New System.Drawing.Point(450, 264)
+        Me.ButtonRegistrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
+        Me.ButtonRegistrar.Location = New System.Drawing.Point(451, 313)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
         Me.ButtonRegistrar.Size = New System.Drawing.Size(91, 51)
         Me.ButtonRegistrar.TabIndex = 15
@@ -138,10 +138,10 @@ Partial Class CamiarContraseña
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(431, 130)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label2.Location = New System.Drawing.Point(429, 174)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 20)
+        Me.Label2.Size = New System.Drawing.Size(124, 23)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Nueva Contraseña"
         '
@@ -149,17 +149,17 @@ Partial Class CamiarContraseña
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(465, 91)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label1.Location = New System.Drawing.Point(495, 134)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
+        Me.Label1.Size = New System.Drawing.Size(58, 23)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Usuario"
         '
         'TextBoxContrarena
         '
         Me.TextBoxContrarena.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxContrarena.Location = New System.Drawing.Point(586, 152)
+        Me.TextBoxContrarena.Location = New System.Drawing.Point(581, 179)
         Me.TextBoxContrarena.Name = "TextBoxContrarena"
         Me.TextBoxContrarena.Size = New System.Drawing.Size(133, 20)
         Me.TextBoxContrarena.TabIndex = 12
@@ -168,7 +168,7 @@ Partial Class CamiarContraseña
         'TextBoxNombre
         '
         Me.TextBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxNombre.Location = New System.Drawing.Point(586, 110)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(581, 137)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(133, 20)
         Me.TextBoxNombre.TabIndex = 11
@@ -189,17 +189,17 @@ Partial Class CamiarContraseña
         '
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(430, 172)
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label3.Location = New System.Drawing.Point(426, 218)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(130, 20)
+        Me.Label3.Size = New System.Drawing.Size(127, 23)
         Me.Label3.TabIndex = 23
         Me.Label3.Text = "Repita Contraseña"
         '
         'TextBoxReContrasena
         '
         Me.TextBoxReContrasena.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBoxReContrasena.Location = New System.Drawing.Point(586, 194)
+        Me.TextBoxReContrasena.Location = New System.Drawing.Point(581, 221)
         Me.TextBoxReContrasena.Name = "TextBoxReContrasena"
         Me.TextBoxReContrasena.Size = New System.Drawing.Size(133, 20)
         Me.TextBoxReContrasena.TabIndex = 22

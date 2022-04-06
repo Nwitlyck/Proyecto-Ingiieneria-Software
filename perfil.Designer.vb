@@ -40,79 +40,84 @@ Partial Class perfil
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(204, 108)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Label1.Location = New System.Drawing.Point(346, 253)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre Producto"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(215, 73)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Label2.Location = New System.Drawing.Point(355, 215)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 13)
+        Me.Label2.Size = New System.Drawing.Size(78, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Id del Producto"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(257, 147)
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(396, 291)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.Size = New System.Drawing.Size(36, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Precio"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(218, 193)
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Label4.Location = New System.Drawing.Point(360, 335)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 13)
+        Me.Label4.Size = New System.Drawing.Size(75, 17)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Supermercado"
         '
         'TextBoxNombrePro
         '
-        Me.TextBoxNombrePro.Location = New System.Drawing.Point(300, 105)
+        Me.TextBoxNombrePro.Location = New System.Drawing.Point(439, 252)
         Me.TextBoxNombrePro.Name = "TextBoxNombrePro"
         Me.TextBoxNombrePro.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxNombrePro.TabIndex = 4
         '
         'TextBoxSupermercado
         '
-        Me.TextBoxSupermercado.Location = New System.Drawing.Point(300, 186)
+        Me.TextBoxSupermercado.Location = New System.Drawing.Point(439, 332)
         Me.TextBoxSupermercado.Name = "TextBoxSupermercado"
         Me.TextBoxSupermercado.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxSupermercado.TabIndex = 5
         '
         'TextBoxPrecio
         '
-        Me.TextBoxPrecio.Location = New System.Drawing.Point(300, 144)
+        Me.TextBoxPrecio.Location = New System.Drawing.Point(439, 291)
         Me.TextBoxPrecio.Name = "TextBoxPrecio"
         Me.TextBoxPrecio.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxPrecio.TabIndex = 6
         '
         'TextBoxProducto
         '
-        Me.TextBoxProducto.Location = New System.Drawing.Point(300, 73)
+        Me.TextBoxProducto.Location = New System.Drawing.Point(439, 212)
         Me.TextBoxProducto.Name = "TextBoxProducto"
         Me.TextBoxProducto.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxProducto.TabIndex = 7
         '
         'ButtonAgregar
         '
-        Me.ButtonAgregar.Location = New System.Drawing.Point(300, 293)
+        Me.ButtonAgregar.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.ButtonAgregar.Location = New System.Drawing.Point(439, 455)
         Me.ButtonAgregar.Name = "ButtonAgregar"
-        Me.ButtonAgregar.Size = New System.Drawing.Size(100, 23)
+        Me.ButtonAgregar.Size = New System.Drawing.Size(100, 32)
         Me.ButtonAgregar.TabIndex = 8
         Me.ButtonAgregar.Text = "Agregar"
         Me.ButtonAgregar.UseVisualStyleBackColor = True
         '
         'TextBoxMarca
         '
-        Me.TextBoxMarca.Location = New System.Drawing.Point(300, 223)
+        Me.TextBoxMarca.Location = New System.Drawing.Point(439, 372)
         Me.TextBoxMarca.Name = "TextBoxMarca"
         Me.TextBoxMarca.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxMarca.TabIndex = 12
@@ -120,26 +125,29 @@ Partial Class perfil
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(257, 230)
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Label5.Location = New System.Drawing.Point(396, 372)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.Size = New System.Drawing.Size(37, 17)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Marca"
         '
         'Buttonedit
         '
-        Me.Buttonedit.Location = New System.Drawing.Point(194, 293)
+        Me.Buttonedit.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Buttonedit.Location = New System.Drawing.Point(305, 455)
         Me.Buttonedit.Name = "Buttonedit"
-        Me.Buttonedit.Size = New System.Drawing.Size(100, 23)
+        Me.Buttonedit.Size = New System.Drawing.Size(100, 32)
         Me.Buttonedit.TabIndex = 13
         Me.Buttonedit.Text = "Editar"
         Me.Buttonedit.UseVisualStyleBackColor = True
         '
         'Buttondelete
         '
-        Me.Buttondelete.Location = New System.Drawing.Point(406, 293)
+        Me.Buttondelete.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
+        Me.Buttondelete.Location = New System.Drawing.Point(567, 455)
         Me.Buttondelete.Name = "Buttondelete"
-        Me.Buttondelete.Size = New System.Drawing.Size(100, 23)
+        Me.Buttondelete.Size = New System.Drawing.Size(100, 32)
         Me.Buttondelete.TabIndex = 14
         Me.Buttondelete.Text = "Delete"
         Me.Buttondelete.UseVisualStyleBackColor = True
@@ -149,7 +157,7 @@ Partial Class perfil
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(972, 706)
         Me.Controls.Add(Me.Buttondelete)
         Me.Controls.Add(Me.Buttonedit)
         Me.Controls.Add(Me.TextBoxMarca)

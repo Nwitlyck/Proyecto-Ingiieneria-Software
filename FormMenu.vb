@@ -103,4 +103,6 @@ Public Class FormMenu
     Private Sub btntiendas_Click(sender As Object, e As EventArgs) Handles btntiendas.Click
         AbrirFomEnPanel(New perfil)
     End Sub
+
+
 End Class

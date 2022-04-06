@@ -118,10 +118,10 @@ Partial Class FormRegistrar
         'ButtonRegistrar
         '
         Me.ButtonRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ButtonRegistrar.Font = New System.Drawing.Font("Impact", 10.0!)
-        Me.ButtonRegistrar.Location = New System.Drawing.Point(551, 364)
+        Me.ButtonRegistrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRegistrar.Location = New System.Drawing.Point(578, 364)
         Me.ButtonRegistrar.Name = "ButtonRegistrar"
-        Me.ButtonRegistrar.Size = New System.Drawing.Size(148, 51)
+        Me.ButtonRegistrar.Size = New System.Drawing.Size(99, 51)
         Me.ButtonRegistrar.TabIndex = 15
         Me.ButtonRegistrar.Text = "Registrar"
         Me.ButtonRegistrar.UseVisualStyleBackColor = True
@@ -130,10 +130,10 @@ Partial Class FormRegistrar
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(388, 100)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label2.Location = New System.Drawing.Point(481, 123)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.Size = New System.Drawing.Size(82, 23)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Contraseña"
         '
@@ -141,28 +141,28 @@ Partial Class FormRegistrar
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(388, 34)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label1.Location = New System.Drawing.Point(481, 49)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
+        Me.Label1.Size = New System.Drawing.Size(58, 23)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Usuario"
         '
         'TextBox2
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.Location = New System.Drawing.Point(566, 133)
+        Me.TextBox2.Location = New System.Drawing.Point(485, 149)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(163, 20)
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.UseSystemPasswordChar = True
         '
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Location = New System.Drawing.Point(566, 67)
+        Me.TextBox1.Location = New System.Drawing.Point(485, 75)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(163, 20)
         Me.TextBox1.TabIndex = 11
         '
         'btnres
@@ -181,19 +181,19 @@ Partial Class FormRegistrar
         '
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(388, 166)
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label3.Location = New System.Drawing.Point(481, 200)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 20)
+        Me.Label3.Size = New System.Drawing.Size(150, 23)
         Me.Label3.TabIndex = 23
-        Me.Label3.Text = "Contraseña (Repita) "
+        Me.Label3.Text = "Confirmar Contraseña"
         '
         'TextBox3
         '
         Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.Location = New System.Drawing.Point(566, 199)
+        Me.TextBox3.Location = New System.Drawing.Point(485, 226)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(163, 20)
         Me.TextBox3.TabIndex = 22
         Me.TextBox3.UseSystemPasswordChar = True
         '
@@ -201,29 +201,29 @@ Partial Class FormRegistrar
         '
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(388, 232)
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.0!)
+        Me.Label4.Location = New System.Drawing.Point(481, 272)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 20)
+        Me.Label4.Size = New System.Drawing.Size(41, 23)
         Me.Label4.TabIndex = 25
         Me.Label4.Text = "Edad"
         '
         'NumericUpDown1
         '
         Me.NumericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(566, 265)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(485, 298)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(133, 20)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(163, 20)
         Me.NumericUpDown1.TabIndex = 27
         Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(392, 364)
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(440, 364)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 51)
+        Me.Button1.Size = New System.Drawing.Size(99, 51)
         Me.Button1.TabIndex = 28
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
