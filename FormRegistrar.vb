@@ -42,18 +42,28 @@ Public Class FormRegistrar
                     MessageBox.Show("Ingrese una contraseña")
                 Else
                     If TextBox2.Text = TextBox3.Text Then
-                        registro.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
-                        registro.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
-                        registro.Parameters.Add("@Edad", SqlDbType.Int).Value = NumericUpDown1.Value
-                        Connect.Open()
-                        If registro.ExecuteNonQuery = 1 Then
-                            MessageBox.Show("Registro Exitoso")
-                            InicioSesion.Show()
-                            Me.Close()
+                        Dim EspCont = UBound(Split(TextBox2.Text, " "))
+                        Dim EspReCont = UBound(Split(TextBox3.Text, " "))
+                        Dim EspUser = UBound(Split(TextBox1.Text, " "))
+                        If EspCont = 0 And EspReCont = 0 And EspUser = 0 Then
+
+
+                            registro.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
+                            registro.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
+                            registro.Parameters.Add("@Edad", SqlDbType.Int).Value = NumericUpDown1.Value
+                            Connect.Open()
+                            If registro.ExecuteNonQuery = 1 Then
+                                MessageBox.Show("Registro Exitoso")
+                                InicioSesion.Show()
+                                Me.Close()
+                            Else
+                                MessageBox.Show("Registro no Exitoso")
+                            End If
+                            Connect.Close()
+
                         Else
-                            MessageBox.Show("Registro no Exitoso")
+                            MessageBox.Show("No use espacios")
                         End If
-                        Connect.Close()
                     Else
                         MessageBox.Show("Las contraseña no coinciden")
                     End If

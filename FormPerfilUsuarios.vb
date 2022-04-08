@@ -30,24 +30,41 @@ Public Class FormPerfilUsuarios
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim anadir As New SqlCommand("UPDATE Usuarios SET Edad = @Edad ,Direccion = @Direccion ,Nombre = @Nombre ,PApellido = @PApellido  ,SApellido = @SApellido ,Celular = @Celular WHERE Usuario = @Usuario ", Connect)
 
-        anadir.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = User.Text
-        anadir.Parameters.Add("@Edad", SqlDbType.Int).Value = NumericUpDownEdad.Value
-        anadir.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = TextBoxUbicacion.Text
-        anadir.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = TextBoxNombre.Text
-        anadir.Parameters.Add("@PApellido", SqlDbType.VarChar).Value = TextBox1apellido.Text
-        anadir.Parameters.Add("@SApellido", SqlDbType.VarChar).Value = TextBox2apellido.Text
-        anadir.Parameters.Add("@Celular", SqlDbType.Int).Value = Convert.ToInt32(TextBoxCelular.Text)
+        If TextBox1apellido.Text = "" Or TextBoxNombre.Text = "" Then
 
-        Connect.Open()
-        If anadir.ExecuteNonQuery() = 1 Then
-            MessageBox.Show("Union realizada")
+            MessageBox.Show("Rellene el nombre y el primer apellido por lo menos")
+
         Else
-            MessageBox.Show("Union no realizada")
+            Dim espaciosNombre = UBound(Split(TextBoxNombre.Text, " "))
+            Dim espaciosAp1 = UBound(Split(TextBox1apellido.Text, " "))
+            Dim espaciosAp2 = UBound(Split(TextBox2apellido.Text, " "))
+            Dim espaciosCelular = UBound(Split(TextBoxCelular.Text, " "))
+
+            If espaciosNombre = 0 And espaciosAp1 = 0 And espaciosAp2 = 0 And espaciosCelular = 0 Then
+                Dim anadir As New SqlCommand("UPDATE Usuarios SET Edad = @Edad ,Direccion = @Direccion ,Nombre = @Nombre ,PApellido = @PApellido  ,SApellido = @SApellido ,Celular = @Celular WHERE Usuario = @Usuario ", Connect)
+
+                anadir.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = User.Text
+                anadir.Parameters.Add("@Edad", SqlDbType.Int).Value = NumericUpDownEdad.Value
+                anadir.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = TextBoxUbicacion.Text
+                anadir.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = TextBoxNombre.Text
+                anadir.Parameters.Add("@PApellido", SqlDbType.VarChar).Value = TextBox1apellido.Text
+                anadir.Parameters.Add("@SApellido", SqlDbType.VarChar).Value = TextBox2apellido.Text
+                anadir.Parameters.Add("@Celular", SqlDbType.Int).Value = Convert.ToInt32(TextBoxCelular.Text)
+
+                Connect.Open()
+                If anadir.ExecuteNonQuery() = 1 Then
+                    MessageBox.Show("Datos Actualizados")
+                Else
+                    MessageBox.Show("Datos no Actualizados")
+                End If
+                Connect.Close()
+                Call Cargar()
+
+            Else
+                MessageBox.Show("No use espacios")
+            End If
         End If
-        Connect.Close()
-        Call Cargar()
     End Sub
 
 

@@ -189,11 +189,11 @@ Partial Class InicioSesion
         'ButtonCC
         '
         Me.ButtonCC.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
-        Me.ButtonCC.Location = New System.Drawing.Point(678, 404)
+        Me.ButtonCC.Location = New System.Drawing.Point(678, 393)
         Me.ButtonCC.Name = "ButtonCC"
-        Me.ButtonCC.Size = New System.Drawing.Size(110, 34)
+        Me.ButtonCC.Size = New System.Drawing.Size(110, 45)
         Me.ButtonCC.TabIndex = 11
-        Me.ButtonCC.Text = "Olvide Contraseña"
+        Me.ButtonCC.Text = "¿Olvidaste tu contraseña?"
         Me.ButtonCC.UseVisualStyleBackColor = True
         '
         'InicioSesion

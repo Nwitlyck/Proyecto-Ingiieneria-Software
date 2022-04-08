@@ -37,7 +37,7 @@ Public Class FormListaCompras
 
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         Dim index As Integer = e.RowIndex
         Dim lineaselecionada As DataGridViewRow = DataGridView1.Rows(index)
         cero = lineaselecionada.Cells(0).Value

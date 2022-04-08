@@ -13,31 +13,39 @@ Public Class InicioSesion
 
     Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Public Sub IniSesion()
+
         If TextBox1.Text = "" Then
             MessageBox.Show("Ingrese un usuario")
         Else
             If TextBox2.Text = "" Then
                 MessageBox.Show("Ingrese una contraseña")
             Else
-                Dim command As New SqlCommand("select * from Usuarios where Usuario = @Usuario and Contrasena = @Contrasena  ", Connect)
+                Dim spaces = UBound(Split(TextBox1.Text, " "))
+                Dim spaces1 = UBound(Split(TextBox2.Text, " "))
+                If (spaces = 0 Or spaces1 = 0) Then
+                    Dim command As New SqlCommand("select * from Usuarios where Usuario = @Usuario and Contrasena = @Contrasena  ", Connect)
 
-                command.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
-                command.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
+                    command.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
+                    command.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
 
-                Dim adapter As New SqlDataAdapter(command)
-                Dim tabla As New DataTable()
-                adapter.Fill(tabla)
+                    Dim adapter As New SqlDataAdapter(command)
+                    Dim tabla As New DataTable()
+                    adapter.Fill(tabla)
 
-                If tabla.Rows.Count() <= 0 Then
+                    If tabla.Rows.Count() <= 0 Then
 
-                    MessageBox.Show("Usuario o contraseña incorrectas")
+                        MessageBox.Show("Usuario o contraseña incorrectas")
 
+                    Else
+
+                        MessageBox.Show("Inicio de sesion correcto")
+                        FormMenu.Show()
+                        x = TextBox1.Text
+                        Me.Hide()
+
+                    End If
                 Else
-
-                    MessageBox.Show("Inicio de sesion correcto")
-                    FormMenu.Show()
-                    x = TextBox1.Text
-                    Me.Hide()
+                    MessageBox.Show("No use espacios")
                 End If
             End If
         End If

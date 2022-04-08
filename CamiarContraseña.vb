@@ -25,22 +25,30 @@ Public Class CamiarContraseña
                     MessageBox.Show("El espacio de confirmar contrasena esta vacio")
                 Else
                     If TextBoxContrarena.Text = TextBoxReContrasena.Text Then
-                        Dim Cambiar_Contrassena As New SqlCommand("UPDATE Usuarios SET Contrasena = @Contrasena WHERE Usuario = @Usuario", Connect)
+                        Dim EspCont = UBound(Split(TextBoxContrarena.Text, " "))
+                        Dim EspReCont = UBound(Split(TextBoxReContrasena.Text, " "))
+                        Dim EspUser = UBound(Split(TextBoxNombre.Text, " "))
+                        If EspCont = 0 And EspReCont = 0 And EspUser = 0 Then
+                            Dim Cambiar_Contrassena As New SqlCommand("UPDATE Usuarios SET Contrasena = @Contrasena WHERE Usuario = @Usuario", Connect)
 
-                        Cambiar_Contrassena.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBoxContrarena.Text
-                        Cambiar_Contrassena.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBoxNombre.Text
+                            Cambiar_Contrassena.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBoxContrarena.Text
+                            Cambiar_Contrassena.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBoxNombre.Text
 
-                        Connect.Open()
-                        If Cambiar_Contrassena.ExecuteNonQuery() = 1 Then
-                            MessageBox.Show("Contrasena cambiada exitosamente")
+                            Connect.Open()
+                            If Cambiar_Contrassena.ExecuteNonQuery() = 1 Then
+                                MessageBox.Show("Contrasena cambiada exitosamente")
+                            Else
+
+                            End If
+                            Connect.Close()
+                            InicioSesion.Show()
+                            Me.Close()
                         Else
-
+                            MessageBox.Show("No use espacios")
                         End If
-                        Connect.Close()
-                        InicioSesion.Show()
-                        Me.Close()
+
                     Else
-                        MessageBox.Show("No coinciden las contrasenas")
+                            MessageBox.Show("No coinciden las contrasenas")
                     End If
                 End If
             End If

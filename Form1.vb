@@ -8,7 +8,7 @@ Public Class FormBuscar
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         FilterData("")
-
+        DataGridView1.AutoResizeColumns()
     End Sub
 
     Public Sub FilterData(valueToSearch As String)
