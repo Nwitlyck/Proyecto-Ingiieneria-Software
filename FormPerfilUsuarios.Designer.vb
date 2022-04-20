@@ -40,6 +40,7 @@ Partial Class FormPerfilUsuarios
         Me.TextBoxCelular = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ButtonDelete = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownEdad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,7 +63,7 @@ Partial Class FormPerfilUsuarios
         '
         Me.ButtonCC.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonCC.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCC.Location = New System.Drawing.Point(12, 638)
+        Me.ButtonCC.Location = New System.Drawing.Point(784, 638)
         Me.ButtonCC.Name = "ButtonCC"
         Me.ButtonCC.Size = New System.Drawing.Size(85, 56)
         Me.ButtonCC.TabIndex = 12
@@ -232,11 +233,23 @@ Partial Class FormPerfilUsuarios
         Me.Label5.TabIndex = 100
         Me.Label5.Text = "Perfil"
         '
+        'ButtonDelete
+        '
+        Me.ButtonDelete.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonDelete.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonDelete.Location = New System.Drawing.Point(12, 638)
+        Me.ButtonDelete.Name = "ButtonDelete"
+        Me.ButtonDelete.Size = New System.Drawing.Size(85, 56)
+        Me.ButtonDelete.TabIndex = 101
+        Me.ButtonDelete.Text = "Eliminar cuenta"
+        Me.ButtonDelete.UseVisualStyleBackColor = True
+        '
         'FormPerfilUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(972, 706)
+        Me.Controls.Add(Me.ButtonDelete)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label7)
@@ -285,4 +298,5 @@ Partial Class FormPerfilUsuarios
     Friend WithEvents TextBoxCelular As TextBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label5 As Label
+    Friend WithEvents ButtonDelete As Button
 End Class

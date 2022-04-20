@@ -1,11 +1,11 @@
 ﻿Imports System.Data.SqlClient
 Public Class FormPerfilUsuarios
     Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
+    Dim bool As Boolean
     Private Sub ButtonCC_Click(sender As Object, e As EventArgs) Handles ButtonCC.Click
         CamiarContraseña.Show()
         Me.Close()
     End Sub
-
 
     Private Sub FormPerfilUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         User.Text = InicioSesion.TextBox1.Text
@@ -67,5 +67,89 @@ Public Class FormPerfilUsuarios
         End If
     End Sub
 
+    Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
+        Dim DeleteUser As New SqlCommand("DELETE FROM Usuarios WHERE usuario = @usuario", Connect)
+        DeleteUser.Parameters.Add("@usuario", SqlDbType.VarChar).Value = User.Text
+        Connect.Open()
+        If DeleteUser.ExecuteNonQuery() = 1 Then
+            MessageBox.Show("Eliminado con exito")
+        Else
+            MessageBox.Show("Usuario no eliminado")
+        End If
+        Connect.Close()
+        Dim limpiar As New SqlCommand("DELETE FROM Lista ", Connect)
+        Connect.Open()
+        If limpiar.ExecuteNonQuery() = 1 Then
+        Else
+        End If
+        Connect.Close()
+        InicioSesion.Show()
+        InicioSesion.TextBox1.Text = ""
+        InicioSesion.TextBox2.Text = ""
+        FormMenu.Close()
+    End Sub
 
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub TextBoxCelular_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCelular.TextChanged
+
+    End Sub
+
+    Private Sub NumericUpDownEdad_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDownEdad.ValueChanged
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub User_Click(sender As Object, e As EventArgs) Handles User.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub TextBox2apellido_TextChanged(sender As Object, e As EventArgs) Handles TextBox2apellido.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub TextBox1apellido_TextChanged(sender As Object, e As EventArgs) Handles TextBox1apellido.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub TextBoxNombre_TextChanged(sender As Object, e As EventArgs) Handles TextBoxNombre.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub TextBoxUbicacion_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUbicacion.TextChanged
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

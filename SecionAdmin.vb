@@ -1,8 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Runtime.InteropServices
-
-
-Public Class InicioSesion
+Public Class SecionAdmin
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -23,27 +21,25 @@ Public Class InicioSesion
                 Dim spaces = UBound(Split(TextBox1.Text, " "))
                 Dim spaces1 = UBound(Split(TextBox2.Text, " "))
                 If (spaces = 0 Or spaces1 = 0) Then
-                    Dim command As New SqlCommand("select * from Usuarios where Usuario = @Usuario and Contrasena = @Contrasena  ", Connect)
+                    Dim Accesso As String
+                    Dim Usuarios As String = TextBox1.Text
+                    Dim Contrasena As String = TextBox2.Text
+                    Dim strCommand As String = "select 'S' from AdminUsuario where usuario = '" & Usuarios & "' and contrasena = '" & Contrasena & "'"
+                    Dim command As SqlCommand = New SqlCommand(strCommand, Connect)
+                    command.CommandType = CommandType.Text
 
-                    command.Parameters.Add("@Usuario", SqlDbType.VarChar).Value = TextBox1.Text
-                    command.Parameters.Add("@Contrasena", SqlDbType.VarChar).Value = TextBox2.Text
+                    Connect.Open()
 
-                    Dim adapter As New SqlDataAdapter(command)
-                    Dim tabla As New DataTable()
-                    adapter.Fill(tabla)
+                    Accesso = command.ExecuteScalar
 
-                    If tabla.Rows.Count() <= 0 Then
-
-                        MessageBox.Show("Usuario o contraseña incorrectas")
-
-                    Else
-
-                        MessageBox.Show("Inicio de sesion correcto")
-                        FormMenu.Show()
-                        x = TextBox1.Text
+                    If Accesso = "S" Then
+                        perfil.Show()
                         Me.Hide()
-
+                    Else
+                        MsgBox("Usuario y contraseña no valido")
                     End If
+
+                    Connect.Close()
                 Else
                     MessageBox.Show("No use espacios")
                 End If
@@ -56,7 +52,7 @@ Public Class InicioSesion
     End Sub
 
     Private Sub ButtonRegistrar_Click(sender As Object, e As EventArgs) Handles ButtonRegistrar.Click
-        FormRegistrar.Show()
+        FormRegistrarAdmin.Show()
         Me.Close()
     End Sub
 
@@ -68,50 +64,21 @@ Public Class InicioSesion
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-
     Private Sub Panel2_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel2.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub InicioSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim adapter As New SqlDataAdapter("SELECT * FROM Lista", Connect)
-        Dim table As New DataTable()
-        adapter.Fill(table)
-        Dim tanke = table.Rows.Count
-        If tanke > 1 Then
-            FormMenu.Show()
-            Me.Close()
-        End If
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
     Private Sub ButtonCC_Click(sender As Object, e As EventArgs) Handles ButtonCC.Click
-        CamiarContraseña.Show()
-        Me.Close()
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        FormMenu.Show()
+        Me.Show()
     End Sub
 End Class

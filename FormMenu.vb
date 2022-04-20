@@ -101,8 +101,12 @@ Public Class FormMenu
     End Sub
 
     Private Sub btntiendas_Click(sender As Object, e As EventArgs) Handles btntiendas.Click
-        AbrirFomEnPanel(New perfil)
+        SecionAdmin.Show()
+        Me.Hide()
+        ''AbrirFomEnPanel(New perfil)
     End Sub
 
+    Private Sub panelcontenedor_Paint(sender As Object, e As PaintEventArgs) Handles panelcontenedor.Paint
 
+    End Sub
 End Class

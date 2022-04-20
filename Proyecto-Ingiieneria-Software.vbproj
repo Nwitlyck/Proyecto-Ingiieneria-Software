@@ -119,6 +119,12 @@
     <Compile Include="FormRegistrar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormRegistrarAdmin.Designer.vb">
+      <DependentUpon>FormRegistrarAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inicio de sesion.Designer.vb">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,18 @@
     <Compile Include="perfil.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PerfilAdmin.Designer.vb">
+      <DependentUpon>PerfilAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecionAdmin.Designer.vb">
+      <DependentUpon>SecionAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SecionAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CamiarContraseña.resx">
@@ -170,6 +188,9 @@
     <EmbeddedResource Include="FormRegistrar.resx">
       <DependentUpon>FormRegistrar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarAdmin.resx">
+      <DependentUpon>FormRegistrarAdmin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio de sesion.resx">
       <DependentUpon>Inicio de sesion.vb</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="perfil.resx">
       <DependentUpon>perfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilAdmin.resx">
+      <DependentUpon>PerfilAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecionAdmin.resx">
+      <DependentUpon>SecionAdmin.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
