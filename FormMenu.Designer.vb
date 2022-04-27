@@ -25,8 +25,6 @@ Partial Class FormMenu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.panelcabecera = New System.Windows.Forms.Panel()
-        Me.btnmax = New System.Windows.Forms.Button()
-        Me.btnres = New System.Windows.Forms.Button()
         Me.btnmin = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.panelmenu = New System.Windows.Forms.Panel()
@@ -56,8 +54,6 @@ Partial Class FormMenu
         'panelcabecera
         '
         Me.panelcabecera.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.panelcabecera.Controls.Add(Me.btnmax)
-        Me.panelcabecera.Controls.Add(Me.btnres)
         Me.panelcabecera.Controls.Add(Me.btnmin)
         Me.panelcabecera.Controls.Add(Me.btncerrar)
         Me.panelcabecera.Dock = System.Windows.Forms.DockStyle.Top
@@ -65,37 +61,6 @@ Partial Class FormMenu
         Me.panelcabecera.Name = "panelcabecera"
         Me.panelcabecera.Size = New System.Drawing.Size(1212, 40)
         Me.panelcabecera.TabIndex = 1
-        '
-        'btnmax
-        '
-        Me.btnmax.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnmax.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnmax.FlatAppearance.BorderSize = 0
-        Me.btnmax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnmax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
-        Me.btnmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnmax.Image = CType(resources.GetObject("btnmax.Image"), System.Drawing.Image)
-        Me.btnmax.Location = New System.Drawing.Point(1123, 0)
-        Me.btnmax.Name = "btnmax"
-        Me.btnmax.Size = New System.Drawing.Size(40, 40)
-        Me.btnmax.TabIndex = 2
-        Me.btnmax.UseVisualStyleBackColor = True
-        '
-        'btnres
-        '
-        Me.btnres.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnres.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnres.FlatAppearance.BorderSize = 0
-        Me.btnres.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnres.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
-        Me.btnres.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnres.Image = CType(resources.GetObject("btnres.Image"), System.Drawing.Image)
-        Me.btnres.Location = New System.Drawing.Point(1123, 0)
-        Me.btnres.Name = "btnres"
-        Me.btnres.Size = New System.Drawing.Size(40, 40)
-        Me.btnres.TabIndex = 6
-        Me.btnres.UseVisualStyleBackColor = True
-        Me.btnres.Visible = False
         '
         'btnmin
         '
@@ -106,7 +71,7 @@ Partial Class FormMenu
         Me.btnmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
         Me.btnmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnmin.Image = CType(resources.GetObject("btnmin.Image"), System.Drawing.Image)
-        Me.btnmin.Location = New System.Drawing.Point(1077, 0)
+        Me.btnmin.Location = New System.Drawing.Point(1123, 0)
         Me.btnmin.Name = "btnmin"
         Me.btnmin.Size = New System.Drawing.Size(40, 40)
         Me.btnmin.TabIndex = 5
@@ -363,9 +328,7 @@ Partial Class FormMenu
     End Sub
 
     Friend WithEvents panelcabecera As Panel
-    Friend WithEvents btnres As Button
     Friend WithEvents btnmin As Button
-    Friend WithEvents btnmax As Button
     Friend WithEvents btncerrar As Button
     Friend WithEvents panelmenu As Panel
     Friend WithEvents PictureBox1 As PictureBox

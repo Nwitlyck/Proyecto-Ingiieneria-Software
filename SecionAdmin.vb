@@ -69,7 +69,7 @@ Public Class SecionAdmin
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub ButtonCC_Click(sender As Object, e As EventArgs) Handles ButtonCC.Click
+    Private Sub ButtonCC_Click(sender As Object, e As EventArgs)
 
     End Sub
 

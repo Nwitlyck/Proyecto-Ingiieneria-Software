@@ -7,15 +7,11 @@ Public Class FormListaCompras
         Call compras()
     End Sub
     Public Sub compras()
-        Dim adapter As New SqlDataAdapter("SELECT * FROM Lista", Connect)
 
+        Dim adapter As New SqlDataAdapter("SELECT * FROM Lista ORDER BY Precio", Connect)
         Dim table As New DataTable()
-
         adapter.Fill(table)
-
         DataGridView1.DataSource = table
-
-
         For x As Integer = 0 To DataGridView1.Rows.Count() - 1 Step +1
             TextBoxtotal.Text = TextBoxtotal.Text + DataGridView1.Rows(x).Cells(2).Value
         Next
@@ -34,6 +30,7 @@ Public Class FormListaCompras
             MessageBox.Show("Producto no eliminado")
         End If
         Connect.Close()
+        compras()
 
     End Sub
 

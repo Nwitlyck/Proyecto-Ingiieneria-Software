@@ -14,18 +14,6 @@ Public Class FormRegistrar
         Application.Exit()
     End Sub
 
-    Private Sub btnres_Click(sender As Object, e As EventArgs) Handles btnres.Click
-        btnres.Visible = False
-        btnmax.Visible = True
-        Me.WindowState = FormWindowState.Normal
-    End Sub
-
-    Private Sub btnmax_Click(sender As Object, e As EventArgs) Handles btnmax.Click
-        btnmax.Visible = False
-        btnres.Visible = True
-        Me.WindowState = FormWindowState.Maximized
-    End Sub
-
     Private Sub btnmin_Click(sender As Object, e As EventArgs) Handles btnmin.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -80,5 +68,10 @@ Public Class FormRegistrar
 
     Private Sub FormRegistrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub Panel2_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel2.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 End Class

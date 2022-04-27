@@ -42,11 +42,14 @@ Partial Class perfil
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.LabelSuper = New System.Windows.Forms.Label()
+        Me.DataGridViewDatos = New System.Windows.Forms.DataGridView()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -148,7 +151,7 @@ Partial Class perfil
         Me.Buttonedit.Name = "Buttonedit"
         Me.Buttonedit.Size = New System.Drawing.Size(100, 32)
         Me.Buttonedit.TabIndex = 13
-        Me.Buttonedit.Text = "Editar"
+        Me.Buttonedit.Text = "Actualizar"
         Me.Buttonedit.UseVisualStyleBackColor = True
         '
         'Buttondelete
@@ -158,14 +161,22 @@ Partial Class perfil
         Me.Buttondelete.Name = "Buttondelete"
         Me.Buttondelete.Size = New System.Drawing.Size(100, 32)
         Me.Buttondelete.TabIndex = 14
-        Me.Buttondelete.Text = "Delete"
+        Me.Buttondelete.Text = "Eliminar"
         Me.Buttondelete.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AllowUserToResizeColumns = False
+        Me.DataGridView1.AllowUserToResizeRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.DataGridView1.Location = New System.Drawing.Point(77, 162)
+        Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(397, 415)
         Me.DataGridView1.TabIndex = 15
         '
@@ -230,12 +241,34 @@ Partial Class perfil
         Me.LabelSuper.Size = New System.Drawing.Size(0, 17)
         Me.LabelSuper.TabIndex = 25
         '
+        'DataGridViewDatos
+        '
+        Me.DataGridViewDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewDatos.Location = New System.Drawing.Point(12, 84)
+        Me.DataGridViewDatos.Name = "DataGridViewDatos"
+        Me.DataGridViewDatos.Size = New System.Drawing.Size(76, 35)
+        Me.DataGridViewDatos.TabIndex = 26
+        Me.DataGridViewDatos.Visible = False
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(12, 638)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(85, 56)
+        Me.Button2.TabIndex = 128
+        Me.Button2.Text = "Cerrar Secion"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'perfil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(972, 706)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.DataGridViewDatos)
         Me.Controls.Add(Me.LabelSuper)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Button1)
@@ -262,6 +295,7 @@ Partial Class perfil
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewDatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -286,4 +320,6 @@ Partial Class perfil
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents LabelSuper As Label
+    Friend WithEvents DataGridViewDatos As DataGridView
+    Friend WithEvents Button2 As Button
 End Class

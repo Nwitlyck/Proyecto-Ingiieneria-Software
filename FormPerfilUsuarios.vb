@@ -4,7 +4,7 @@ Public Class FormPerfilUsuarios
     Dim bool As Boolean
     Private Sub ButtonCC_Click(sender As Object, e As EventArgs) Handles ButtonCC.Click
         CamiarContraseña.Show()
-        Me.Close()
+        FormMenu.Hide()
     End Sub
 
     Private Sub FormPerfilUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load

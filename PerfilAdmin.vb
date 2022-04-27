@@ -1,5 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Runtime.InteropServices
 Public Class PerfilAdmin
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
     Dim Connect As New SqlConnection(“Data Source = ALVARO\SQLPRUEBA; Initial Catalog = ProyectoDatos; Integrated Security = True”)
     Private Sub PerfilAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -57,5 +64,24 @@ Public Class PerfilAdmin
         SecionAdmin.TextBox2.Text = ""
         SecionAdmin.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
+        Dim DeleteUser As New SqlCommand("DELETE FROM AdminUsuario WHERE usuario = @usuario", Connect)
+        DeleteUser.Parameters.Add("@usuario", SqlDbType.VarChar).Value = User.Text
+        Connect.Open()
+        If DeleteUser.ExecuteNonQuery() = 1 Then
+            MessageBox.Show("Eliminado con exito")
+        Else
+            MessageBox.Show("Usuario no eliminado")
+        End If
+        SecionAdmin.Show()
+        SecionAdmin.TextBox1.Text = ""
+        SecionAdmin.TextBox2.Text = ""
+    End Sub
+
+    Private Sub Panel2_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel2.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 End Class

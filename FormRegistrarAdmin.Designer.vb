@@ -27,7 +27,6 @@ Partial Class FormRegistrarAdmin
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ButtonRegistrar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,10 +37,12 @@ Partial Class FormRegistrarAdmin
         Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBoxEmpresa = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -78,22 +79,13 @@ Partial Class FormRegistrarAdmin
         '
         'Panel1
         '
+        Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Panel1.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(343, 450)
         Me.Panel1.TabIndex = 34
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(714, 31)
-        Me.Panel2.TabIndex = 11
         '
         'PictureBox1
         '
@@ -163,7 +155,7 @@ Partial Class FormRegistrarAdmin
         Me.btnmin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnmin.BackColor = System.Drawing.Color.DarkTurquoise
         Me.btnmin.Image = CType(resources.GetObject("btnmin.Image"), System.Drawing.Image)
-        Me.btnmin.Location = New System.Drawing.Point(743, 0)
+        Me.btnmin.Location = New System.Drawing.Point(743, 3)
         Me.btnmin.Name = "btnmin"
         Me.btnmin.Size = New System.Drawing.Size(30, 31)
         Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -202,18 +194,28 @@ Partial Class FormRegistrarAdmin
         Me.TextBoxEmpresa.Size = New System.Drawing.Size(163, 24)
         Me.TextBoxEmpresa.TabIndex = 44
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.btnmin)
+        Me.Panel2.Controls.Add(Me.btncerrar)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 31)
+        Me.Panel2.TabIndex = 46
+        '
         'FormRegistrarAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBoxEmpresa)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.btnmin)
-        Me.Controls.Add(Me.btncerrar)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonRegistrar)
         Me.Controls.Add(Me.Label2)
@@ -228,6 +230,7 @@ Partial Class FormRegistrarAdmin
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,7 +242,6 @@ Partial Class FormRegistrarAdmin
     Friend WithEvents btnmin As PictureBox
     Friend WithEvents btncerrar As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ButtonRegistrar As Button
     Friend WithEvents Label2 As Label
@@ -248,4 +250,5 @@ Partial Class FormRegistrarAdmin
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBoxEmpresa As TextBox
+    Friend WithEvents Panel2 As Panel
 End Class

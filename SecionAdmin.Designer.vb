@@ -23,35 +23,24 @@ Partial Class SecionAdmin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SecionAdmin))
-        Me.ButtonCC = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnmin = New System.Windows.Forms.PictureBox()
+        Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.ButtonIniciosesion = New System.Windows.Forms.Button()
         Me.ButtonRegistrar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.btnmin = New System.Windows.Forms.PictureBox()
-        Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ButtonCC
-        '
-        Me.ButtonCC.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.0!)
-        Me.ButtonCC.Location = New System.Drawing.Point(678, 393)
-        Me.ButtonCC.Name = "ButtonCC"
-        Me.ButtonCC.Size = New System.Drawing.Size(110, 45)
-        Me.ButtonCC.TabIndex = 23
-        Me.ButtonCC.Text = "¿Olvidaste tu contraseña?"
-        Me.ButtonCC.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -62,6 +51,17 @@ Partial Class SecionAdmin
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(343, 450)
         Me.Panel1.TabIndex = 18
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(50, 119)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(229, 204)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -74,16 +74,27 @@ Partial Class SecionAdmin
         Me.Panel2.Size = New System.Drawing.Size(800, 31)
         Me.Panel2.TabIndex = 11
         '
-        'PictureBox1
+        'btnmin
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 119)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(229, 204)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.btnmin.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnmin.Image = CType(resources.GetObject("btnmin.Image"), System.Drawing.Image)
+        Me.btnmin.Location = New System.Drawing.Point(742, 0)
+        Me.btnmin.Name = "btnmin"
+        Me.btnmin.Size = New System.Drawing.Size(30, 31)
+        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnmin.TabIndex = 21
+        Me.btnmin.TabStop = False
+        '
+        'btncerrar
+        '
+        Me.btncerrar.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btncerrar.Image = CType(resources.GetObject("btncerrar.Image"), System.Drawing.Image)
+        Me.btncerrar.Location = New System.Drawing.Point(769, 0)
+        Me.btncerrar.Name = "btncerrar"
+        Me.btncerrar.Size = New System.Drawing.Size(30, 31)
+        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btncerrar.TabIndex = 19
+        Me.btncerrar.TabStop = False
         '
         'ButtonIniciosesion
         '
@@ -148,28 +159,6 @@ Partial Class SecionAdmin
         Me.TextBox1.Size = New System.Drawing.Size(133, 24)
         Me.TextBox1.TabIndex = 12
         '
-        'btnmin
-        '
-        Me.btnmin.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btnmin.Image = CType(resources.GetObject("btnmin.Image"), System.Drawing.Image)
-        Me.btnmin.Location = New System.Drawing.Point(742, 0)
-        Me.btnmin.Name = "btnmin"
-        Me.btnmin.Size = New System.Drawing.Size(30, 31)
-        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnmin.TabIndex = 21
-        Me.btnmin.TabStop = False
-        '
-        'btncerrar
-        '
-        Me.btncerrar.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btncerrar.Image = CType(resources.GetObject("btncerrar.Image"), System.Drawing.Image)
-        Me.btncerrar.Location = New System.Drawing.Point(769, 0)
-        Me.btncerrar.Name = "btncerrar"
-        Me.btncerrar.Size = New System.Drawing.Size(30, 31)
-        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btncerrar.TabIndex = 19
-        Me.btncerrar.TabStop = False
-        '
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -188,7 +177,6 @@ Partial Class SecionAdmin
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ButtonCC)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonIniciosesion)
         Me.Controls.Add(Me.ButtonRegistrar)
@@ -201,16 +189,14 @@ Partial Class SecionAdmin
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SecionAdmin"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents ButtonCC As Button
     Friend WithEvents btnmin As PictureBox
     Friend WithEvents btncerrar As PictureBox
     Friend WithEvents Panel1 As Panel
