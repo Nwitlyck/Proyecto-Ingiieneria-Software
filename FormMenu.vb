@@ -97,4 +97,12 @@ Public Class FormMenu
     Private Sub panelcontenedor_Paint(sender As Object, e As PaintEventArgs) Handles panelcontenedor.Paint
 
     End Sub
+
+    Private Sub btnhome_Click(sender As Object, e As EventArgs) Handles btnhome.Click
+        AbrirFomEnPanel(New FormHome)
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        AbrirFomEnPanel(New FormHome)
+    End Sub
 End Class
