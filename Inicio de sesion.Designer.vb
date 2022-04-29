@@ -35,6 +35,7 @@ Partial Class InicioSesion
         Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.ButtonCC = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -163,6 +164,7 @@ Partial Class InicioSesion
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -170,6 +172,17 @@ Partial Class InicioSesion
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(800, 31)
         Me.Panel2.TabIndex = 12
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(3, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(136, 29)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Inicio de sesion"
         '
         'InicioSesion
         '
@@ -195,6 +208,7 @@ Partial Class InicioSesion
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -212,4 +226,5 @@ Partial Class InicioSesion
     Friend WithEvents btnmin As PictureBox
     Friend WithEvents ButtonCC As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label3 As Label
 End Class

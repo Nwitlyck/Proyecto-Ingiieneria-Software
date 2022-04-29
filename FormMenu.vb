@@ -105,4 +105,8 @@ Public Class FormMenu
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         AbrirFomEnPanel(New FormHome)
     End Sub
+
+    Private Sub FormMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AbrirFomEnPanel(New FormHome)
+    End Sub
 End Class

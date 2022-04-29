@@ -36,6 +36,7 @@ Partial Class CamiarContraseña
         Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBoxReContrasena = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -91,6 +92,7 @@ Partial Class CamiarContraseña
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -183,6 +185,17 @@ Partial Class CamiarContraseña
         Me.TextBoxReContrasena.TabIndex = 22
         Me.TextBoxReContrasena.UseSystemPasswordChar = True
         '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(3, 2)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(177, 29)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "Cambiar Contraseña"
+        '
         'CamiarContraseña
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -207,6 +220,7 @@ Partial Class CamiarContraseña
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -225,4 +239,5 @@ Partial Class CamiarContraseña
     Friend WithEvents TextBoxNombre As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBoxReContrasena As TextBox
+    Friend WithEvents Label4 As Label
 End Class

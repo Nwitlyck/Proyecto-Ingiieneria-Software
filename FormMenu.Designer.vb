@@ -25,6 +25,7 @@ Partial Class FormMenu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.panelcabecera = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnmin = New System.Windows.Forms.Button()
         Me.btncerrar = New System.Windows.Forms.Button()
         Me.panelmenu = New System.Windows.Forms.Panel()
@@ -54,6 +55,7 @@ Partial Class FormMenu
         'panelcabecera
         '
         Me.panelcabecera.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.panelcabecera.Controls.Add(Me.Label3)
         Me.panelcabecera.Controls.Add(Me.btnmin)
         Me.panelcabecera.Controls.Add(Me.btncerrar)
         Me.panelcabecera.Dock = System.Windows.Forms.DockStyle.Top
@@ -61,6 +63,17 @@ Partial Class FormMenu
         Me.panelcabecera.Name = "panelcabecera"
         Me.panelcabecera.Size = New System.Drawing.Size(1212, 40)
         Me.panelcabecera.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(3, 8)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(132, 29)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Menu Principal"
         '
         'btnmin
         '
@@ -320,6 +333,7 @@ Partial Class FormMenu
         Me.Name = "FormMenu"
         Me.Text = "menu"
         Me.panelcabecera.ResumeLayout(False)
+        Me.panelcabecera.PerformLayout()
         Me.panelmenu.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnmenu, System.ComponentModel.ISupportInitialize).EndInit()
@@ -348,4 +362,5 @@ Partial Class FormMenu
     Friend WithEvents panelcontenedor As Panel
     Friend WithEvents ocultmenu As Timer
     Friend WithEvents mostmenu As Timer
+    Friend WithEvents Label3 As Label
 End Class

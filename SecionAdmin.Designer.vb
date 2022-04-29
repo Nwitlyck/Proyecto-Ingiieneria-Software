@@ -35,6 +35,7 @@ Partial Class SecionAdmin
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -66,6 +67,7 @@ Partial Class SecionAdmin
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -170,6 +172,17 @@ Partial Class SecionAdmin
         Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(3, 2)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(256, 29)
+        Me.Label3.TabIndex = 45
+        Me.Label3.Text = "Inicio de sesion administrador"
+        '
         'SecionAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -191,6 +204,7 @@ Partial Class SecionAdmin
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -209,4 +223,5 @@ Partial Class SecionAdmin
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label3 As Label
 End Class

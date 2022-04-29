@@ -37,6 +37,7 @@ Partial Class perfil
         Me.Buttondelete = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnmin = New System.Windows.Forms.PictureBox()
         Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -183,6 +184,7 @@ Partial Class perfil
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -190,6 +192,17 @@ Partial Class perfil
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(972, 31)
         Me.Panel2.TabIndex = 22
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(3, 2)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(178, 29)
+        Me.Label6.TabIndex = 129
+        Me.Label6.Text = "Manejo de productos"
         '
         'btnmin
         '
@@ -258,7 +271,7 @@ Partial Class perfil
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 56)
         Me.Button2.TabIndex = 128
-        Me.Button2.Text = "Cerrar Secion"
+        Me.Button2.Text = "Cerrar sesion"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'perfil
@@ -292,6 +305,7 @@ Partial Class perfil
         Me.Text = "Perfil"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -322,4 +336,5 @@ Partial Class perfil
     Friend WithEvents LabelSuper As Label
     Friend WithEvents DataGridViewDatos As DataGridView
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label6 As Label
 End Class

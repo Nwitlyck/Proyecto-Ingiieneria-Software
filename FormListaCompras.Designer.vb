@@ -29,6 +29,7 @@ Partial Class FormListaCompras
         Me.TextBoxtotal = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -106,12 +107,21 @@ Partial Class FormListaCompras
         Me.DataGridView1.Size = New System.Drawing.Size(473, 344)
         Me.DataGridView1.TabIndex = 98
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!)
+        Me.TextBox1.Location = New System.Drawing.Point(335, 518)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 27)
+        Me.TextBox1.TabIndex = 99
+        '
         'FormListaCompras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(956, 667)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBoxtotal)
@@ -129,4 +139,5 @@ Partial Class FormListaCompras
     Friend WithEvents TextBoxtotal As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TextBox1 As TextBox
 End Class

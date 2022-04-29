@@ -7,7 +7,7 @@ Public Class FormListaCompras
         Call compras()
     End Sub
     Public Sub compras()
-
+        TextBoxtotal.Text = "0"
         Dim adapter As New SqlDataAdapter("SELECT * FROM Lista ORDER BY Precio", Connect)
         Dim table As New DataTable()
         adapter.Fill(table)
@@ -19,18 +19,21 @@ Public Class FormListaCompras
     End Sub
 
     Private Sub ButtonEliminar_Click(sender As Object, e As EventArgs) Handles ButtonEliminar.Click
-
-        Dim eliminar As New SqlCommand("DELETE FROM Lista WHERE CodigoPro = @CodigoPro", Connect)
-        eliminar.Parameters.Add("@CodigoPro", SqlDbType.Int).Value = cero
-        Connect.Open()
-        If eliminar.ExecuteNonQuery() = 1 Then
-            MessageBox.Show("Producto eliminaado")
-            Call compras()
+        If TextBox1.Text = "" Then
+            MessageBox.Show("Escriba un ID de producto")
         Else
-            MessageBox.Show("Producto no eliminado")
+            Dim eliminar As New SqlCommand("DELETE FROM Lista WHERE CodigoPro = @CodigoPro", Connect)
+            eliminar.Parameters.Add("@CodigoPro", SqlDbType.Int).Value = TextBox1.Text
+            Connect.Open()
+            If eliminar.ExecuteNonQuery() = 1 Then
+                MessageBox.Show("Producto eliminaado")
+                Call compras()
+            Else
+                MessageBox.Show("Producto no eliminado")
+            End If
+            Connect.Close()
+            compras()
         End If
-        Connect.Close()
-        compras()
 
     End Sub
 
@@ -38,5 +41,6 @@ Public Class FormListaCompras
         Dim index As Integer = e.RowIndex
         Dim lineaselecionada As DataGridViewRow = DataGridView1.Rows(index)
         cero = lineaselecionada.Cells(0).Value
+        MessageBox.Show(cero)
     End Sub
 End Class

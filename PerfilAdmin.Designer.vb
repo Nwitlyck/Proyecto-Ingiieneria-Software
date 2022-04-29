@@ -40,6 +40,7 @@ Partial Class PerfilAdmin
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +52,7 @@ Partial Class PerfilAdmin
         '
         Me.ButtonDelete.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ButtonDelete.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDelete.Location = New System.Drawing.Point(296, 638)
+        Me.ButtonDelete.Location = New System.Drawing.Point(294, 464)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(85, 56)
         Me.ButtonDelete.TabIndex = 120
@@ -82,7 +83,7 @@ Partial Class PerfilAdmin
         Me.User.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.User.AutoSize = True
         Me.User.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.User.Location = New System.Drawing.Point(12, 174)
+        Me.User.Location = New System.Drawing.Point(10, 174)
         Me.User.Name = "User"
         Me.User.Size = New System.Drawing.Size(62, 23)
         Me.User.TabIndex = 113
@@ -93,7 +94,7 @@ Partial Class PerfilAdmin
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 296)
+        Me.Label1.Location = New System.Drawing.Point(10, 219)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 23)
         Me.Label1.TabIndex = 108
@@ -103,7 +104,7 @@ Partial Class PerfilAdmin
         '
         Me.TextBoxNombre.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBoxNombre.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxNombre.Location = New System.Drawing.Point(36, 322)
+        Me.TextBoxNombre.Location = New System.Drawing.Point(14, 245)
         Me.TextBoxNombre.Name = "TextBoxNombre"
         Me.TextBoxNombre.Size = New System.Drawing.Size(190, 30)
         Me.TextBoxNombre.TabIndex = 107
@@ -112,7 +113,7 @@ Partial Class PerfilAdmin
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(387, 638)
+        Me.Button1.Location = New System.Drawing.Point(385, 464)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 56)
         Me.Button1.TabIndex = 104
@@ -125,7 +126,7 @@ Partial Class PerfilAdmin
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.Proyecto_Ingiieneria_Software.My.Resources.Resources.profile_g888983ebd_640
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 37)
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 37)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(129, 134)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -137,7 +138,7 @@ Partial Class PerfilAdmin
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(35, 362)
+        Me.Label3.Location = New System.Drawing.Point(13, 285)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(91, 23)
         Me.Label3.TabIndex = 123
@@ -147,7 +148,7 @@ Partial Class PerfilAdmin
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(39, 388)
+        Me.TextBox1.Location = New System.Drawing.Point(17, 311)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(190, 30)
         Me.TextBox1.TabIndex = 122
@@ -157,7 +158,7 @@ Partial Class PerfilAdmin
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(35, 435)
+        Me.Label2.Location = New System.Drawing.Point(13, 358)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(152, 23)
         Me.Label2.TabIndex = 125
@@ -167,7 +168,7 @@ Partial Class PerfilAdmin
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox2.Font = New System.Drawing.Font("Bahnschrift Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(39, 461)
+        Me.TextBox2.Location = New System.Drawing.Point(17, 384)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(190, 30)
         Me.TextBox2.TabIndex = 124
@@ -197,6 +198,7 @@ Partial Class PerfilAdmin
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -209,7 +211,7 @@ Partial Class PerfilAdmin
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 638)
+        Me.Button2.Location = New System.Drawing.Point(10, 464)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 56)
         Me.Button2.TabIndex = 127
@@ -227,11 +229,22 @@ Partial Class PerfilAdmin
         Me.Button3.Text = "Volver"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(3, 2)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(200, 29)
+        Me.Label4.TabIndex = 129
+        Me.Label4.Text = "Perfil de administrador"
+        '
         'PerfilAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(484, 706)
+        Me.ClientSize = New System.Drawing.Size(484, 535)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel2)
@@ -255,6 +268,7 @@ Partial Class PerfilAdmin
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -277,4 +291,5 @@ Partial Class PerfilAdmin
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label4 As Label
 End Class

@@ -38,6 +38,7 @@ Partial Class FormRegistrarAdmin
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBoxEmpresa = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -197,6 +198,7 @@ Partial Class FormRegistrarAdmin
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.btnmin)
         Me.Panel2.Controls.Add(Me.btncerrar)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -204,6 +206,17 @@ Partial Class FormRegistrarAdmin
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(800, 31)
         Me.Panel2.TabIndex = 46
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, 3)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(200, 29)
+        Me.Label5.TabIndex = 47
+        Me.Label5.Text = "Registro administrador"
         '
         'FormRegistrarAdmin
         '
@@ -231,6 +244,7 @@ Partial Class FormRegistrarAdmin
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -251,4 +265,5 @@ Partial Class FormRegistrarAdmin
     Friend WithEvents Label4 As Label
     Friend WithEvents TextBoxEmpresa As TextBox
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label5 As Label
 End Class
